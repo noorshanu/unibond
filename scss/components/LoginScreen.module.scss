@@ -1,0 +1,143 @@
+@use "../utils" as u;
+@use "../globals/colors" as colors;
+
+.screen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  max-width: u.rem(678);
+  padding: u.rem(70) u.rem(100);
+  z-index: 500;
+  background: linear-gradient(180deg, #f4bb00 0%, #ffa800 100%);
+  box-shadow: 0px 8px 241px rgba(0, 0, 0, 0.21);
+  border-radius: u.rem(30);
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.9);
+  transition: all 0.2s ease;
+  pointer-events: none;
+
+  &.show {
+    pointer-events: visible;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  form {
+    margin-bottom: 1.2rem;
+
+    main {
+      margin-bottom: 0.5rem;
+
+      & > :not(:last-child) {
+        margin-bottom: 1.6rem;
+      }
+    }
+
+    footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 2.4rem;
+    }
+  }
+
+  label {
+    margin-bottom: 0.8rem;
+    display: block;
+    width: fit-content;
+    cursor: pointer;
+  }
+
+  input {
+    background: #f4f4f4;
+    border-radius: u.rem(6);
+    padding: 0.8rem 1rem;
+    width: 100%;
+  }
+
+  .loginBtn {
+    padding: u.rem(11) u.rem(28);
+    background-color: black;
+    border-radius: u.rem(6);
+    display: flex;
+    align-items: center;
+
+    & > :not(:last-child) {
+      margin-right: 0.8rem;
+    }
+
+    & > .icon {
+      display: flex;
+      font-size: 1.7rem;
+    }
+  }
+
+  @include u.breakpoint(large) {
+    max-width: u.rem(500);
+    padding: u.rem(40) u.rem(60);
+    border-radius: u.rem(10);
+
+    form {
+      margin-bottom: 1rem;
+
+      main {
+        & > :not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+
+      footer {
+        margin-top: 2rem;
+      }
+    }
+
+    .loginBtn {
+      & > :not(:last-child) {
+        margin-right: 0.6rem;
+      }
+
+      & > .icon {
+        display: flex;
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  @include u.breakpoint(small) {
+    max-width: u.rem(500);
+    padding: u.rem(30) u.rem(40);
+    border-radius: u.rem(10);
+
+    label {
+      margin-bottom: 0.4rem;
+    }
+
+    .loginBtn {
+      padding: u.rem(11) u.rem(20);
+
+      & > .icon {
+        display: flex;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  @include u.breakpoint(xsmall) {
+    form {
+      footer {
+        flex-direction: column;
+        align-items: unset;
+        justify-content: flex-start;
+
+        & > :not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    .loginBtn {
+      width: fit-content;
+    }
+  }
+}

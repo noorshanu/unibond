@@ -1,0 +1,85 @@
+@use "../utils" as u;
+@use "../globals/colors" as colors;
+
+.button {
+  min-width: 2.7vw !important;
+  height: 2.7vw;
+  background: var(--color-icon-button);
+  box-shadow: u.rem(0) u.rem(8) u.rem(23) rgba(0, 0, 0, 0.21);
+  border-radius: 0.7vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+
+  & > img {
+    border-radius: 0.7vw;
+    width: 100%;
+    height: 100%;
+  }
+
+  .iconWrap {
+    position: relative;
+    display: flex;
+    width: 48%;
+    height: 48%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .notficationCircle {
+    position: absolute;
+
+    top: -0.1vw;
+    right: -0.1vw;
+
+    width: 0.7vw;
+    height: 0.7vw;
+
+    background: colors.$yellow;
+    border-radius: 50%;
+    z-index: 10;
+  }
+
+  & > .notficationCircle {
+    top: -0.3vw;
+    right: -0.3vw;
+
+    width: 0.9vw;
+    height: 0.9vw;
+  }
+
+  @include u.breakpoint(large) {
+    min-width: 2.6rem !important;
+    height: 2.6rem;
+    border-radius: 0.4rem !important;
+
+    & > img {
+      border-radius: 0.4rem;
+    }
+
+    .notficationCircle {
+      top: -0.05rem !important;
+      right: -0.05rem !important;
+
+      width: 0.5rem;
+      height: 0.5rem;
+
+      background: colors.$yellow;
+      border-radius: 50%;
+      z-index: 10;
+    }
+
+    & > .notficationCircle {
+      top: -0.2rem;
+      right: -0.2rem;
+
+      width: 0.7rem;
+      height: 0.7rem;
+    }
+  }
+}

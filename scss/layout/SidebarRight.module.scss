@@ -1,0 +1,89 @@
+@use "../utils/" as u;
+@use "../globals/colors" as colors;
+
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  pointer-events: none;
+  z-index: 400;
+  width: 100%;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: flex-end;
+  overflow-x: hidden;
+  // background-color: red;
+
+  &.wrapperShowing {
+    pointer-events: visible;
+    overflow-y: auto;
+  }
+}
+
+.sidebar {
+  $padding-y: u.rem(42);
+  $padding-x: u.rem(40);
+
+  height: fit-content;
+  min-height: 100%;
+
+  width: u.rem(300);
+  background-color: var(--right-sidebar-bg);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  text-align: right;
+  transform: translateX(calc(u.rem(300)));
+
+  &.open {
+    transform: translateX(0);
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding: $padding-y $padding-x;
+
+    .closeBtn {
+      font-size: 1.8rem;
+      display: flex;
+      cursor: pointer;
+    }
+  }
+
+  main {
+    flex: 1;
+    a {
+      display: block;
+      padding: u.rem(12) $padding-x;
+      position: relative;
+
+      .sidebarlinkIcon {
+        position: absolute !important;
+        top: 50% !important;
+        left: $padding-x !important;
+        transform: translateY(-50%) !important;
+      }
+    }
+
+    a.active {
+      background-color: colors.$yellow;
+      box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.25);
+    }
+
+    a.logoutBtn {
+      margin-top: 4rem;
+    }
+
+    & > :not(:last-child) {
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  .footer {
+    padding: $padding-y $padding-x;
+  }
+}

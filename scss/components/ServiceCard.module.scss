@@ -1,0 +1,95 @@
+@use "../utils" as u;
+@use "../globals/colors" as colors;
+
+.card {
+  background: var(--progress-card-bg);
+  box-shadow: 0 0.7638888888888888vw 4.722222222222222vw -0.20833333333333334vw rgba(0, 0, 0, 0.25);
+  border-radius: var(--r20px);
+  padding: 1.35vw 1.9vw;
+  position: relative;
+  z-index: 1;
+}
+
+.blob {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -10;
+  width: 7.8vw;
+  height: 9vw;
+  // filter: drop-shadow(0px 11px 68px rgba(0, 0, 0, 0.25));
+}
+
+.card.dark .card_img {
+  filter: invert(1);
+}
+
+.title {
+  position: relative;
+  width: fit-content;
+  z-index: 1;
+  margin-bottom: 1.7vw;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 78%;
+    width: 100%;
+    height: 0.25vw;
+    background-color: colors.$yellow;
+    border-radius: var(--r20px);
+    z-index: -2;
+  }
+}
+
+.skillCard {
+  border: 1px solid colors.$yellow;
+  border-radius: 1vw;
+  width: fit-content;
+  padding: 0.2vw 0.5vw;
+}
+
+.skills > :not(:last-child) {
+  margin-bottom: 0.35000000000000003vw;
+}
+
+@include u.breakpoint(large) {
+  .card {
+    padding: 0.8rem 1rem;
+    border-radius: 0.6rem;
+  }
+
+  .title {
+    margin-bottom: 0.8rem;
+  }
+
+  .skillCard {
+    border-radius: 1rem;
+    padding: 0.1rem 0.4rem;
+  }
+
+  .skills > :not(:last-child) {
+    margin-bottom: 0.4rem;
+  }
+
+  .blob {
+    width: 7.8vw;
+    height: 9vw;
+    width: 64%;
+    height: 74%;
+  }
+}
+
+@include u.breakpoint(small) {
+  .blob {
+    width: 7.8vw;
+    height: 9vw;
+    width: 40%;
+    height: 74%;
+  }
+
+  .title {
+    margin-bottom: 0.6rem;
+  }
+}

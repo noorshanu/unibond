@@ -1,0 +1,144 @@
+@use "../utils" as u;
+@use "../globals/colors" as colors;
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  // min-width: u.rem(50);
+  width: 2.5%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 100;
+  pointer-events: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 52%;
+    background-color: colors.$yellow;
+    transform: translateY(-50%);
+    border-top-right-radius: 2.8vw;
+    border-bottom-right-radius: 2.8vw;
+  }
+
+  & > :not(:last-child) {
+    // margin-bottom: u.rem(22);
+    margin-bottom: 20%;
+
+    @include u.breakpoint(twoxLarge) {
+      margin-bottom: 20%;
+    }
+  }
+
+  button {
+    position: relative;
+    height: u.rem(50);
+    height: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: visible;
+
+    img {
+      width: 48%;
+    }
+  }
+
+  .baggingIcon {
+    position: absolute;
+    left: 0;
+    bottom: u.rem(30);
+    width: 100%;
+
+    img {
+      width: 55%;
+    }
+  }
+
+  @include u.breakpoint(large) {
+    height: 4rem;
+    width: 100%;
+    top: unset;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 3rem;
+    align-items: center;
+    // padding-bottom: 1rem;
+
+    $icon-szie: 1.2rem;
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      border-top-right-radius: unset;
+      border-bottom-right-radius: unset;
+    }
+
+    & > :not(:last-child) {
+      margin-bottom: 0%;
+      @include u.breakpoint(twoxLarge) {
+        margin-bottom: 0%;
+      }
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      height: auto;
+      flex-direction: column-reverse;
+
+      &::before {
+        content: attr(data-icon-name);
+        margin-top: 0.3rem;
+        font-size: u.rem(12);
+        font-weight: 600;
+        color: var(--icons-sidebar-text-color);
+      }
+
+      img {
+        width: $icon-szie;
+        filter: invert(1);
+      }
+    }
+
+    button:nth-child(2) {
+      img {
+        width: $icon-szie + 0.1rem;
+      }
+    }
+    button:nth-child(3) {
+      img {
+        width: $icon-szie + 0.2rem;
+      }
+    }
+    button:nth-child(4) {
+      img {
+        width: $icon-szie + 0.3rem;
+      }
+    }
+
+    button:nth-child(3),
+    button:nth-child(4),
+    button:nth-child(6) {
+      display: none;
+    }
+
+    .baggingIcon {
+      display: none;
+    }
+  }
+
+  @include u.breakpoint(xsmall) {
+    padding: 0 1.6rem;
+  }
+}

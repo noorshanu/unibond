@@ -1,0 +1,127 @@
+@use "../utils" as u;
+@use "../globals/colors" as colors;
+
+.wrapper {
+  height: 100%;
+  position: relative;
+
+  & > main {
+    width: 44%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    & > :not(:last-child) {
+      margin-bottom: 2.7777777777777777vw;
+    }
+
+    .mapWrapper {
+      flex: 1;
+      position: relative;
+      border-radius: var(--r20px);
+      overflow: hidden;
+      box-shadow: u.rem(0) u.rem(11) u.rem(68) rgba(0, 0, 0, 0.4);
+
+      .map {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .location {
+      background: linear-gradient(180deg, #f4bb00 0%, #ffa901 100%);
+      box-shadow: u.rem(0) u.rem(11) u.rem(68) rgba(0, 0, 0, 0.25);
+      border-radius: var(--r20px);
+      padding: 2.2vw 4vw;
+
+      display: flex;
+      align-items: center;
+
+      & > :not(:last-child) {
+        margin-right: 3vw;
+      }
+
+      .locationIcon {
+        min-width: 2vw !important;
+      }
+    }
+  }
+
+  @include u.breakpoint(large) {
+    & > main {
+      width: 100%;
+
+      & > :not(:last-child) {
+        margin-bottom: 1.4rem;
+      }
+
+      .location {
+        border-radius: 0.6rem;
+        padding: 1.4rem 2rem;
+
+        & > :not(:last-child) {
+          margin-right: 2rem;
+        }
+
+        .locationIcon {
+          min-width: 1rem !important;
+        }
+      }
+
+      .mapWrapper {
+        border-radius: 1rem;
+        min-height: 22rem !important;
+
+        .map {
+          // position: static;
+          width: 100%;
+          min-height: 100% !important;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  @include u.breakpoint(small) {
+    height: auto !important;
+
+    & > main {
+      width: 100%;
+      height: auto !important;
+
+      & > :not(:last-child) {
+        margin-bottom: 1.4rem;
+      }
+
+      .location {
+        border-radius: 0.6rem;
+        padding: 1.4rem 2rem;
+
+        & > :not(:last-child) {
+          margin-right: 1.2rem;
+        }
+
+        .locationIcon {
+          min-width: 1.2rem !important;
+          width: 1.4rem;
+          min-width: 1.2rem;
+        }
+      }
+
+      .mapWrapper {
+        border-radius: 1rem;
+        min-height: auto !important;
+        display: flex;
+
+        .map {
+          position: static;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

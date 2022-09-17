@@ -1,0 +1,62 @@
+@use "../utils" as u;
+@use "../globals/colors" as colors;
+
+$sidebar-width: 21vw;
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100%;
+  height: 100vh;
+  position: relative;
+
+  &.showSidebar {
+    grid-template-columns: 1fr $sidebar-width;
+  }
+
+  .left {
+    // overflow: auto;
+    display: flex;
+    flex-direction: column;
+
+    & > main {
+      flex: 1;
+
+      padding: 1.6vw 2.6vw;
+      padding-bottom: 2.3vw;
+      padding-left: 7.5vw;
+    }
+  }
+}
+
+.sidebar {
+  box-shadow: 17px 4px 148px rgba(244, 187, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: $sidebar-width;
+  height: 100%;
+}
+
+@include u.breakpoint(large) {
+  .dashboard {
+    height: auto;
+    padding-bottom: 4rem;
+
+    &.showSidebar {
+      grid-template-columns: 1fr;
+    }
+
+    .left {
+      & > main {
+        padding: 1rem 3%;
+        // padding-left: 2rem;
+      }
+    }
+  }
+
+  .sidebar {
+    display: none;
+  }
+}

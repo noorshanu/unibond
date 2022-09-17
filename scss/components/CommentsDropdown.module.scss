@@ -1,0 +1,51 @@
+@use "../globals/colors" as colors;
+
+.dropdown {
+  position: absolute;
+  top: 120%;
+  right: 0;
+  width: 20vw;
+  background: #000000;
+  box-shadow: 0px 0.2777777777777778vw 2.7777777777777777vw rgba(0, 0, 0, 0.35);
+  border-radius: 0.6944444444444444vw;
+  padding: 1vw 2.2vw;
+  padding-bottom: 2vw;
+  z-index: 50;
+
+  transform: translateY(10%);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+.dropdown.open {
+  transform: translateY(0%);
+  opacity: 1;
+  pointer-events: visible;
+}
+
+.userCard {
+  display: flex;
+  align-items: center;
+  padding: 0.8vw 0;
+  border-bottom: 0.2vw solid colors.$yellow;
+  position: relative;
+
+  & > :not(:last-child) {
+    margin-right: 1.2vw;
+  }
+
+  .usercardTitle {
+    font-size: 1vw;
+    color: white;
+    margin-right: 2vw;
+  }
+}
+
+.commentNumber {
+  font-size: 1.1vw;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}

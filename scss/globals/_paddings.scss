@@ -1,0 +1,48 @@
+@use "../utils" as u;
+
+/* paddings */
+.py-15px {
+  padding-top: u.rem(15);
+  padding-bottom: u.rem(15);
+}
+.py-10px {
+  padding-top: u.rem(10);
+  padding-bottom: u.rem(10);
+}
+.py-20px {
+  padding-top: u.rem(20);
+  padding-bottom: u.rem(20);
+}
+.py-30px {
+  padding-top: u.rem(30);
+  padding-bottom: u.rem(30);
+}
+.py-50px {
+  padding-top: u.rem(50);
+  padding-bottom: u.rem(50);
+}
+.py-70px {
+  padding-top: u.rem(70);
+  padding-bottom: u.rem(70);
+}
+.py-100px {
+  padding-top: u.rem(100);
+  padding-bottom: u.rem(100);
+}
+.py-150px {
+  padding-top: u.rem(150);
+  padding-bottom: u.rem(150);
+}
+.py-200px {
+  padding-top: u.rem(200);
+  padding-bottom: u.rem(200);
+}
+.pt-88px {
+  padding-top: u.rem(88);
+}
+.pt-0 {
+  padding-top: 0;
+}
+.pb-0 {
+  padding-bottom: 0;
+}

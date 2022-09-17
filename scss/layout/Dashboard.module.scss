@@ -1,0 +1,328 @@
+@use "../utils" as u;
+@use "../globals/colors" as colors;
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.6vw 2.1vw;
+  grid-template-rows: auto 1fr auto;
+  height: 100%;
+
+  .cards {
+    display: grid;
+    gap: 1.6vw 0;
+  }
+
+  .tweets {
+    width: 100%;
+    min-height: fit-content;
+    position: relative;
+    background: linear-gradient(180deg, #2694f9 0%, #8b2dec 100%);
+    box-shadow: 0px 11px 68px -3px rgba(0, 0, 0, 0.25);
+    border-radius: var(--r20px);
+    padding: 0.5vw;
+    padding-top: 1vw;
+    display: flex;
+    flex-direction: column;
+
+    .tweetsBanner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    & > div {
+      height: 100%;
+    }
+
+    & > header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      margin-bottom: 1vw;
+
+      .tweetsTitle {
+        font-size: 0.6944444444444444vw;
+        color: white;
+        font-weight: 700;
+      }
+
+      span {
+        position: absolute;
+        top: 50%;
+        left: 1vw;
+        font-size: 1vw;
+        transform: translateY(-50%);
+        display: flex;
+      }
+    }
+
+    & > main {
+      position: relative;
+      flex: 1;
+
+      & > div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: var(--r20px);
+      }
+    }
+  }
+
+  .ongoingProjectCode {
+    grid-column: 3/-1;
+    height: 100%;
+    background: var(--progress-card-bg);
+    box-shadow: 0px 11px 68px -3px rgba(0, 0, 0, 0.25);
+    padding: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--r20px);
+
+    & > h1 {
+      padding-left: 1rem;
+    }
+  }
+
+  .projectCode {
+    width: 100%;
+    flex: 1;
+    border-radius: var(--r20px);
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+
+    img {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .onGoingTitle {
+    margin-bottom: 1.2vw;
+  }
+
+  .footer {
+    padding: 1vw 1.6vw;
+    background: var(--progress-card-bg);
+    box-shadow: u.rem(0) u.rem(11) u.rem(68) rgba(0, 0, 0, 0.25);
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr auto;
+    border-radius: var(--r20px);
+
+    .reportIcon {
+      width: 3.4vw;
+    }
+
+    .reportTickIcon {
+      width: 3.6vw;
+    }
+
+    .box1 {
+      display: flex;
+      align-items: center;
+
+      & > :not(:last-child) {
+        margin-right: 2vw;
+      }
+
+      .reportTitles {
+        display: flex;
+        align-items: center;
+
+        & > :not(:last-child) {
+          margin-right: 1rem;
+        }
+
+        .reportLink {
+          position: relative;
+          z-index: 1;
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 80%;
+            width: 100%;
+            height: u.rem(3);
+            background: colors.$yellow;
+            border-radius: u.rem(17);
+            z-index: -10;
+          }
+        }
+      }
+    }
+
+    .box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  @include u.breakpoint(large) {
+    gap: 1.2rem 1.2rem;
+
+    .footer {
+      grid-template-columns: 1fr 1fr;
+      padding: 1rem 2rem;
+      gap: 2rem;
+
+      .reportIcon {
+        width: 3rem;
+      }
+
+      .reportTickIcon {
+        width: 3rem;
+      }
+
+      .box1 {
+        grid-column: 1/-1;
+
+        & > :not(:last-child) {
+          margin-right: 2rem;
+        }
+      }
+
+      .box {
+        & > :not(:last-child) {
+          margin-bottom: 0.6rem;
+        }
+      }
+    }
+
+    .ongoingProjectCode {
+      border-radius: u.rem(20);
+      padding: 1.2rem;
+
+      & > h1 {
+        padding-left: 1rem;
+      }
+
+      .onGoingTitle {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .tweets {
+      border-radius: var(--r20px);
+      padding: 0.8rem;
+
+      & > header {
+        margin-bottom: 0.8rem;
+
+        .tweetsTitle {
+          font-size: 0.6rem;
+        }
+
+        span {
+          left: 0.8rem;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
+  @include u.breakpoint(medium) {
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-rows: unset;
+
+    .ongoingProjectCode {
+      grid-column: 1/-1;
+    }
+
+    .projectCode {
+      border-radius: u.rem(10);
+      min-height: u.rem(240);
+
+      // img {
+      //   position: static;
+      //   width: 100%;
+      //   height: 100%;
+      // }
+    }
+  }
+
+  @include u.breakpoint(small) {
+    .footer {
+      grid-template-columns: 1fr;
+      padding: 1rem 1.6rem;
+      gap: 1.6rem;
+
+      .reportIcon {
+        width: 2.6rem;
+      }
+
+      .reportTickIcon {
+        width: 2.6rem;
+      }
+
+      .box1 {
+        grid-column: 1/-1;
+
+        & > :not(:last-child) {
+          margin-right: 1.6rem;
+        }
+      }
+
+      .box {
+        & > :not(:last-child) {
+          margin-bottom: 0.4rem;
+        }
+      }
+    }
+  }
+  @include u.breakpoint(xsmall) {
+    gap: 0.8rem 0.8rem;
+
+    .footer {
+      .reportIcon {
+        width: 2.2rem;
+      }
+
+      .reportTickIcon {
+        width: 2.2rem;
+      }
+
+      .box1 {
+        grid-column: 1/-1;
+
+        & > :not(:last-child) {
+          margin-right: 1.2rem;
+        }
+      }
+
+      .box {
+        & > :not(:last-child) {
+          margin-bottom: 0.4rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 28.125em) {
+    .tweets {
+      grid-column: 1/-1;
+      grid-row: 4/5;
+      min-height: 20rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column: 1/-1;
+      gap: 0.8rem 0.8rem;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+@use "../globals/colors" as colors;
+@use "../utils" as *;
+
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}

@@ -1,0 +1,32 @@
+@use "../utils" as u;
+
+.contactCard {
+  display: flex;
+  align-items: center;
+
+  .icon {
+    display: flex;
+    width: 4vw;
+    color: var(--color-black);
+
+    svg {
+      width: 1.9vw;
+      height: 1.9vw;
+    }
+  }
+}
+
+@include u.breakpoint(large) {
+  .contactCard {
+    .icon {
+      display: flex;
+      width: 2rem !important;
+      font-size: 1.2rem !important;
+
+      svg {
+        width: unset !important;
+        height: unset !important;
+      }
+    }
+  }
+}

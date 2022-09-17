@@ -1,0 +1,35 @@
+/* COLORS */
+
+$orange: var(--color-orange);
+$gray: var(--color-gray);
+$yellow: var(--color-yellow);
+$blue: var(--color-blue);
+$light-gray: var(--color-light-gray);
+
+.black {
+  color: var(--color-black);
+}
+.white {
+  color: var(--color-white);
+}
+.orange {
+  color: $orange;
+}
+.gray {
+  color: $gray;
+}
+.yellow {
+  color: $yellow;
+}
+.blue {
+  color: $blue;
+}
+.light-gray {
+  color: $light-gray;
+}
+.unchange-white {
+  color: var(--unchange-white);
+}
+.unchange-gray {
+  color: var(--unchange-gray);
+}

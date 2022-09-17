@@ -1,0 +1,14 @@
+@use "../utils/" as u;
+@use "../globals/colors" as colors;
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  a {
+    font-size: 1.3rem;
+    display: flex;
+    color: colors.$light-gray;
+  }
+}

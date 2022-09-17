@@ -1,0 +1,133 @@
+@use "../utils" as u;
+
+:root {
+  // FONT SIZES
+  --fs-4px: #{u.rem(4)};
+  --fs-6px: #{u.rem(6)};
+  --fs-10px: #{u.rem(10)};
+  --fs-16px: #{u.rem(16)};
+
+  --fs-8px: #{u.rem(8)};
+  --fs-12px: #{u.rem(12)};
+  --fs-14px: #{u.rem(14)};
+  --fs-18px: #{u.rem(18)};
+  --fs-20px: #{u.rem(20)};
+  --fs-22px: #{u.rem(22)};
+  --fs-24px: #{u.rem(24)};
+  --fs-30px: #{u.rem(30)};
+
+  --fs-26px: #{u.rem(26)};
+  --fs-28px: #{u.rem(28)};
+  --fs-32px: #{u.rem(32)};
+  --fs-34px: #{u.rem(34)};
+  --fs-36px: #{u.rem(36)};
+  --fs-38px: #{u.rem(38)};
+  --fs-40px: #{u.rem(40)};
+  --fs-42px: #{u.rem(42)};
+  --fs-44px: #{u.rem(44)};
+
+  --fs-46px: #{u.rem(46)};
+
+  --fs-48px: #{u.rem(48)};
+  --fs-50px: #{u.rem(50)};
+  --fs-52px: #{u.rem(52)};
+  --fs-54px: #{u.rem(54)};
+  --fs-56px: #{u.rem(56)};
+  --fs-58px: #{u.rem(58)};
+  --fs-60px: #{u.rem(60)};
+  --fs-62px: #{u.rem(62)};
+  --fs-64px: #{u.rem(64)};
+  --fs-66px: #{u.rem(66)};
+  --fs-68px: #{u.rem(68)};
+  --fs-70px: #{u.rem(70)};
+  --fs-72px: #{u.rem(72)};
+  --fs-74px: #{u.rem(74)};
+  --fs-76px: #{u.rem(76)};
+  --fs-78px: #{u.rem(78)};
+  --fs-80px: #{u.rem(80)};
+  --fs-82px: #{u.rem(82)};
+  --fs-84px: #{u.rem(84)};
+  --fs-86px: #{u.rem(86)};
+  --fs-88px: #{u.rem(88)};
+  --fs-90px: #{u.rem(90)};
+  --fs-92px: #{u.rem(92)};
+  --fs-94px: #{u.rem(94)};
+  --fs-96px: #{u.rem(96)};
+  --fs-98px: #{u.rem(98)};
+  --fs-100px: #{u.rem(100)};
+  --fs-102px: #{u.rem(102)};
+  --fs-104px: #{u.rem(104)};
+  --fs-106px: #{u.rem(106)};
+  --fs-108px: #{u.rem(108)};
+  --fs-110px: #{u.rem(110)};
+
+  --fs-146px: #{u.rem(146)};
+  --fs-172px: #{u.rem(172)};
+  --fs-168px: #{u.rem(168)};
+  --fs-144px: #{u.rem(144)};
+
+  // RADIUSES
+  --r10px: 1.297016861219196vh;
+  --r20px: 1.3888888888888888vw;
+  --r30px: 2.0833333333333335vw;
+
+  // COLORS
+  --color-orange: #d09756;
+  --color-gray: #525252;
+  --color-yellow: #f4bb00;
+  --color-blue: #0a66c2;
+  --color-light-gray: rgba(0, 0, 0, 0.5);
+  --color-bg-white: white;
+  --color-sidebar: #f6f5f9;
+  --color-black: black;
+  --color-white: white;
+  --color-icon-button: white;
+  --color-users-scrollbar-bg: #d9d9d9;
+  --progress-card-bg: white;
+  --right-sidebar-bg: white;
+  --icons-sidebar-text-color: #525252;
+  --unchange-white: white;
+  --unchange-gray: #525252;
+  --text-changeable-white: white;
+  --user-cards-dissolver: linear-gradient(
+    180deg,
+    rgba(246, 245, 249, 0) 0%,
+    #f4bb00 48.23%
+  );
+}
+
+[data-theme="dark"] {
+  --text-changeable-white: black;
+  --right-sidebar-bg: #f4bb00;
+  --color-bg-white: rgb(31, 31, 31);
+  --color-black: white;
+  --progress-card-bg: rgb(63, 63, 63);
+  --color-gray: #a5a5a5;
+  --color-sidebar: rgb(26, 26, 26);
+  --color-light-gray: rgba(255, 255, 255, 0.9);
+  // --user-cards-dissolver: linear-gradient(
+  //   180deg,
+  //   rgba(246, 245, 249, 0) 0%,
+  //   rgb(26, 26, 26) 48.23%
+  // );
+}
+
+@include u.breakpoint(large) {
+  :root {
+    --r10px: #{u.rem(8)};
+    --r20px: #{u.rem(14)};
+    --r30px: #{u.rem(20)};
+  }
+}
+
+[data-units="vw"] {
+  --fs-8px: #{0.4vw};
+  --fs-12px: #{0.63vw};
+  --fs-14px: #{0.73vw};
+  --fs-18px: #{0.94vw};
+  --fs-20px: #{1.04vw};
+  --fs-22px: #{1.15vw};
+  --fs-24px: #{1.25vw};
+  --fs-30px: #{1.56vw};
+  --fs-46px: #{2.4vw};
+}

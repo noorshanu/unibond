@@ -1,0 +1,14 @@
+input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.type-number-reset {
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+}

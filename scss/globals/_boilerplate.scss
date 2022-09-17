@@ -1,0 +1,64 @@
+@use "../utils" as u;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: u.$font-main;
+}
+
+:root {
+  scroll-behavior: smooth;
+  // overflow-x: hidden !important;
+}
+
+body {
+  font-size: 100% !important;
+  overflow-x: hidden !important;
+  background-color: var(--color-bg-white);
+}
+
+html {
+  &::-webkit-scrollbar {
+    width: 0.4rem !important;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: var(--color-users-scrollbar-bg) !important;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 27px !important;
+    background-color: var(--color-gray) !important;
+  }
+}
+
+.custom-scrollbar {
+  &::-webkit-scrollbar {
+    width: 0.4rem !important;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: var(--color-users-scrollbar-bg) !important;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 27px !important;
+    background-color: var(--color-gray) !important;
+  }
+}
+
+.font-secondary {
+  font-family: u.$font-secondary;
+}
+
+.opacity-hover-effect:hover {
+  opacity: 0.6;
+}
+
+.popup-hover-effect {
+  transition: all 0.2s ease;
+}
+.popup-hover-effect:hover {
+  transform: translateY(-16%);
+}

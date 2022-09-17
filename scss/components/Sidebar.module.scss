@@ -1,0 +1,108 @@
+@use "../utils/" as u;
+
+.container {
+  padding-left: 2.5vw;
+  padding-right: 2.5vw;
+}
+.container2 {
+  padding-left: 1.8vw;
+  padding-right: 1.8vw;
+}
+
+.sidebar {
+  height: 100%;
+  background: var(--color-yellow);
+  padding: 2.6vw 0;
+  padding-top: 1.6vw;
+  position: relative;
+
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 2.8vw;
+
+  .userHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #d9d9d9;
+    padding: u.rem(4) 0;
+
+    button {
+      display: flex;
+      cursor: pointer;
+    }
+  }
+
+  .usersCardsWrapper {
+    display: grid;
+    grid-template-rows: 1fr;
+    min-height: 100%;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0%;
+      z-index: 100;
+      left: 0;
+      width: 85%;
+      height: 4vw;
+      background: var(--user-cards-dissolver);
+      //   border: 2px solid red;
+      //   display: none;
+      //   border: 2px solid red;
+    }
+
+    .usersCards {
+      position: relative;
+      height: auto;
+      margin-top: 1.6vw;
+      padding-top: 1.6%;
+      padding-bottom: 3vw;
+      padding-left: 2.5vw;
+      margin-right: 1.8vw;
+      overflow-y: scroll;
+
+      &::-webkit-scrollbar {
+        width: 0.6vw;
+      }
+
+      &::-webkit-scrollbar-track {
+        border-radius: 27px;
+        background-color: var(--color-users-scrollbar-bg);
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 27px;
+        background-color: var(--color-gray);
+      }
+
+      //   &:hover {
+      //     &::-webkit-scrollbar-track {
+      //       background-color: #d9d9d9;
+      //     }
+
+      //     &::-webkit-scrollbar-thumb {
+      //       background-color: #5c5c5c;
+      //     }
+      //   }
+
+      & > :not(:last-child) {
+        margin-bottom: 1.16vw;
+      }
+    }
+  }
+
+  .commentIcon {
+    position: absolute;
+    bottom: 1vw;
+    right: 1vw;
+    cursor: pointer;
+    display: flex;
+    border-radius: 50%;
+
+    img {
+      width: 4vw;
+    }
+  }
+}

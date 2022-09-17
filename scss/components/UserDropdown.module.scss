@@ -1,0 +1,39 @@
+@use "../globals/colors" as colors;
+.dropdown {
+  position: absolute;
+  top: 120%;
+  right: 0;
+  width: 15.48611111111111vw;
+  background: #000000;
+  box-shadow: 0px 0.2777777777777778vw 2.7777777777777777vw rgba(0, 0, 0, 0.35);
+  border-radius: 0.6944444444444444vw;
+  padding: 1.3888888888888888vw 0;
+  z-index: 50;
+
+  transform: translateY(10%);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+.dropdown.open {
+  transform: translateY(0%);
+  opacity: 1;
+  pointer-events: visible;
+}
+
+.btn {
+  color: white;
+  display: block;
+  padding: 0.8vw 1.5972222222222223vw;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.9vw;
+}
+
+.btn:hover {
+  background-color: colors.$yellow;
+  color: black;
+}

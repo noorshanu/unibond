@@ -1,0 +1,22 @@
+@use "sass:math";
+
+@function rem($pixel) {
+  // divide pixel by 16 to return rem
+  @if math.is-unitless($pixel) {
+    @return math.div($pixel, 16) + rem;
+  }
+  // Throw an Error if the parameter has unit
+  @else {
+    @error 'Dont\'t use units when using rem() function';
+  }
+}
+@function em($pixel) {
+  // divide pixel by 16 to return em
+  @if math.is-unitless($pixel) {
+    @return math.div($pixel, 16) + em;
+  }
+  // Throw an Error if the parameter has unit
+  @else {
+    @error 'Dont\'t use units when using em() function';
+  }
+}
