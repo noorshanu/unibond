@@ -1,0 +1,59 @@
+@use "../utils" as u;
+
+.accordion {
+  $padding-x: u.rem(40);
+  $padding-y: u.rem(30);
+
+  border: 2px solid var(--color-yellow);
+  border-radius: 0.4rem;
+
+  & > button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: $padding-y $padding-x;
+    cursor: pointer;
+    position: relative;
+
+    & > p {
+      text-align: left;
+      margin-right: 1rem;
+    }
+
+    .downIcon {
+      display: flex;
+      font-size: 1.4em;
+      transition: all 0.3s ease;
+    }
+  }
+
+  & > main {
+    transition: all 0.3s ease;
+    height: 0;
+    overflow: hidden;
+
+    & > div {
+      padding: $padding-y $padding-x;
+      padding-top: 1rem;
+    }
+  }
+
+  &.active {
+    & > button {
+      .downIcon {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  //   @include u.breakpoint(small) {
+  //     & > button {
+  //       padding: u.rem(14) u.rem(10);
+
+  //       & > p {
+  //         font-size: 1rem !important;
+  //       }
+  //     }
+  //   }
+}

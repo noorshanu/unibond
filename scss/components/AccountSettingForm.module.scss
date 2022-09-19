@@ -1,0 +1,13 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.6rem;
+  //   padding-bottom: 2rem;
+}
+
+.btnWrapper {
+  grid-column: 1/-1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
