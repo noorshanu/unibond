@@ -6,7 +6,7 @@ import styles from "scss/layout/DashboardLayout.module.scss";
 import Navbar from "./Navbar";
 
 function Dashboardlayout(props) {
-  const { children, showSidebar = true, pageName } = props;
+  const { children, showSidebar = true, pagename } = props;
   const isBellow1024px = useMediaQuery("(max-width : 64em)");
 
   return (
@@ -16,7 +16,7 @@ function Dashboardlayout(props) {
     >
       <div className={styles.left}>
         <header>
-          <Navbar pageName={pageName} />
+          <Navbar pagename={pagename} />
         </header>
 
         <main>{children}</main>

@@ -12,7 +12,7 @@ import Link from "next/link";
 import { IKImage } from "imagekitio-react";
 import OutsideClickDetector from "hooks/OutsideClickDetector";
 
-function Navbar({ pageName }) {
+function Navbar({ pagename }) {
   const isBellow1024px = useMediaQuery("(max-width : 64em)");
   const [isLeftSidebarOpen, setIsLeftSidebarOpen] = useState(false);
   const [isRightSidebarOpen, setIsRightSidebarOpen] = useState(false);
@@ -70,7 +70,7 @@ function Navbar({ pageName }) {
             className="pointer fs-14px"
             onClick={() => setIsPageNameDropdownShow((val) => !val)}
           >
-            <span className="fs-inherit gray weight-6">{pageName}</span>
+            <span className="fs-inherit gray weight-6">{pagename}</span>
             <IoCaretDownCircleSharp className={`${styles.downIcon} gray`} />
           </button>
 

@@ -15,7 +15,7 @@ const IconButton = forwardRef((props, ref) => {
   } = props;
 
   return (
-    <div ref={ref} className={`relative ${wrapperClassName} `}>
+    <div ref={ref ? ref : null} className={`relative ${wrapperClassName} `}>
       <div
         className={`${styles.button} ${className} relative`}
         onClick={onClick ? onClick : null}

@@ -1,4 +1,3 @@
-import OutsideClickDetector from "hooks/OutsideClickDetector";
 import React, { forwardRef } from "react";
 import styles from "scss/components/CommentsDropdown.module.scss";
 import IconButton from "./IconButton";

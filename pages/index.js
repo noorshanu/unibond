@@ -4,7 +4,7 @@ import Dashboard from "layouts/Dashboard";
 export default function Home() {
   return (
     <div data-layout="dashboard">
-      <DashboardLayout pageName="Dashboard">
+      <DashboardLayout pagename="Dashboard">
         <Dashboard />
       </DashboardLayout>
     </div>

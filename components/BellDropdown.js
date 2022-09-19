@@ -11,8 +11,7 @@ const NotificationCard = ({ title, notify }) => {
   );
 };
 
-function BellDropdown(props) {
-  const { ref } = props;
+const BellDropdown = React.forwardRef((props, ref) => {
   const [stateValue, stateSetter] = props.state;
 
   return (
@@ -29,6 +28,8 @@ function BellDropdown(props) {
       <NotificationCard title="Notification 7 (unread)" />
     </div>
   );
-}
+});
+
+BellDropdown.displayName = "BellDropdown";
 
 export default BellDropdown;
