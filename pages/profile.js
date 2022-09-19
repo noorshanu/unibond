@@ -5,7 +5,7 @@ import React from "react";
 function Profile() {
   return (
     <div>
-      <Dashboardlayout data-units="vw" pageName="Profile">
+      <Dashboardlayout data-layout="dashboard" pageName="Profile">
         <ProfilePage />
       </Dashboardlayout>
     </div>

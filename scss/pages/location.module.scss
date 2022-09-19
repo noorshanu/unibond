@@ -5,7 +5,7 @@
   .contactDetailsWrapper {
     position: absolute;
     top: 0;
-    right: 4.444444444444445vw;
+    right: 4.444444444444445rem;
     width: 40%;
     height: 100%;
     display: flex;
@@ -22,20 +22,22 @@
       flex-direction: column;
       align-items: center;
       justify-content: flex-end;
-      padding: 2.7777777777777777vw 1vw;
+      padding: 2rem 1rem;
       position: relative;
+      z-index: 10;
 
       .cities {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        height: 52%;
+        height: 50%;
+        z-index: -10;
       }
 
       .cards {
         & > :not(:last-child) {
-          margin-bottom: 1vw;
+          margin-bottom: 1rem;
         }
       }
     }
@@ -44,7 +46,7 @@
       min-height: 50%;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 1vw;
+      gap: 1rem;
       width: 90%;
       margin: 0 auto;
 

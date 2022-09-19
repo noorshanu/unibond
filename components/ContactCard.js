@@ -3,9 +3,9 @@ import styles from "scss/components/ContactCard.module.scss";
 
 function ContactCard({ icon, title }) {
   return (
-    <div className={styles.contactCard}>
+    <div className={`${styles.contactCard} fs-22px`}>
       <div className={styles.icon}>{icon}</div>
-      <p className="fs-30px weight-5 black">{title}</p>
+      <p className="fs-inherit weight-5 black">{title}</p>
     </div>
   );
 }

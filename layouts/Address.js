@@ -19,7 +19,7 @@ function Address() {
           />
         </div>
 
-        <div className={styles.location}>
+        <div className={`${styles.location} fs-18px`}>
           <IKImage
             path="icons/location-icon.svg"
             className={styles.locationIcon}
@@ -28,11 +28,7 @@ function Address() {
             alt=""
           />
 
-          <p
-            className={`white ${
-              isBellow640px ? "fs-14px" : "fs-20px"
-            } lh-1_4 weight-7`}
-          >
+          <p className="white fs-inherit lh-1_4 weight-7">
             Sheikh Mohammed Bin Rashed Boulevard Downtown Dubai, P.O. Box 31166,
             Dubai, UAE
           </p>

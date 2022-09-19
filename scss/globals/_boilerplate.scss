@@ -9,11 +9,10 @@
 
 :root {
   scroll-behavior: smooth;
-  // overflow-x: hidden !important;
+  font-size: 100% !important;
 }
 
 body {
-  font-size: 100% !important;
   overflow-x: hidden !important;
   background-color: var(--color-bg-white);
 }
@@ -32,6 +31,20 @@ html {
     background-color: var(--color-gray) !important;
   }
 }
+
+@include u.breakpoint("1400px") {
+  :root {
+    font-size: 82% !important;
+  }
+}
+
+@include u.breakpoint("xLarge") {
+  :root {
+    font-size: 68% !important;
+  }
+}
+
+// COMPONENTS
 
 .custom-scrollbar {
   &::-webkit-scrollbar {

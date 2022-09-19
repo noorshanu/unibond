@@ -10,12 +10,21 @@ const SkillCard = ({ text }) => {
   );
 };
 
-function ServiceCard({ title, icon, iconClass = "two", fontSize = "fs-30px" }) {
+function ServiceCard({
+  title,
+  icon,
+  iconClass = "two",
+  fontSize = "fs-30px",
+  style,
+}) {
   const isBellow760px = useMediaQuery("(max-width : 47.5em)");
   const { isDark } = useSelector((state) => state.themeState);
 
   return (
-    <div className={`${styles.card} ${isDark ? styles.dark : ""}`}>
+    <div
+      className={`${styles.card} ${isDark ? styles.dark : ""}`}
+      style={style}
+    >
       <IKImage
         path="images/triangleBlob.png"
         className={styles.blob}
@@ -23,11 +32,7 @@ function ServiceCard({ title, icon, iconClass = "two", fontSize = "fs-30px" }) {
         lqip={{ active: true }}
         alt=""
       />
-      <h1
-        className={`${isBellow760px ? "fs-20px" : "fs-30px"} weight-8 black ${
-          styles.title
-        }`}
-      >
+      <h1 className={`fs-20px mb-20px weight-8 black ${styles.title}`}>
         {title}
       </h1>
 

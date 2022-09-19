@@ -12,7 +12,7 @@
     height: 100%;
 
     & > :not(:last-child) {
-      margin-bottom: 2.7777777777777777vw;
+      margin-bottom: 2.7777777777777777rem;
     }
 
     .mapWrapper {
@@ -35,17 +35,17 @@
       background: linear-gradient(180deg, #f4bb00 0%, #ffa901 100%);
       box-shadow: u.rem(0) u.rem(11) u.rem(68) rgba(0, 0, 0, 0.25);
       border-radius: var(--r20px);
-      padding: 2.2vw 4vw;
+      padding: 1.6rem 3rem;
 
       display: flex;
       align-items: center;
 
       & > :not(:last-child) {
-        margin-right: 3vw;
+        margin-right: 2em;
       }
 
       .locationIcon {
-        min-width: 2vw !important;
+        min-width: 1.4em !important;
       }
     }
   }

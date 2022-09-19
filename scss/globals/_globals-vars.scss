@@ -67,9 +67,9 @@
   --fs-144px: #{u.rem(144)};
 
   // RADIUSES
-  --r10px: 1.297016861219196vh;
-  --r20px: 1.3888888888888888vw;
-  --r30px: 2.0833333333333335vw;
+  --r10px: 1.2rem;
+  --r20px: 1.2rem;
+  --r30px: 2.1rem;
 
   // COLORS
   --color-orange: #d09756;
@@ -120,7 +120,7 @@
   }
 }
 
-// [data-units="vw"] {
+// [data-layout="dashboard"] {
 //   --fs-8px: #{0.4vw};
 //   --fs-12px: #{0.63vw};
 //   --fs-14px: #{0.73vw};

@@ -9,7 +9,7 @@ import { IKImage } from "imagekitio-react";
 
 export default function AddressPage() {
   return (
-    <div className={styles.page} data-units="vw">
+    <div className={styles.page} data-layout="dashboard">
       <DashboardLayout showSidebar={false} pageName="Location">
         <Address />
       </DashboardLayout>

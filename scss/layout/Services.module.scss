@@ -3,84 +3,178 @@
 .wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2.3vw;
+  gap: 2.3rem;
   height: 100%;
 }
 
 .icon {
   position: absolute;
+  right: 10%;
+  width: var(--icon-width);
+  bottom: 15%;
 }
 
-.icon1 {
-  right: 1vw;
-  bottom: 2vw;
-  width: 6vw;
-}
+// .icon1 {
+//   right: 1rem;
+//   bottom: 2rem;
+//   width: 6rem;
+// }
 
-.icon2 {
-  right: 1.6vw;
-  bottom: 2vw;
-  width: 5.6vw;
-}
+// .icon2 {
+//   right: 1.6rem;
+//   bottom: 2rem;
+//   width: 5.6rem;
+// }
 
-.icon3 {
-  right: 1.6vw;
-  bottom: 2vw;
-  width: 5.6vw;
-}
+// .icon3 {
+//   right: 1.6rem;
+//   bottom: 2rem;
+//   width: 5.6rem;
+// }
 
-.icon4 {
-  right: 2vw;
-  bottom: 2vw;
-  width: 4vw;
-}
+// .icon4 {
+//   right: 2rem;
+//   bottom: 2rem;
+//   width: 4rem;
+// }
 
-.icon5 {
-  right: 1.2vw;
-  bottom: 3vw;
-  width: 6vw;
-}
+// .icon5 {
+//   right: 1.2rem;
+//   bottom: 3rem;
+//   width: 6rem;
+// }
 
-.icon6 {
-  right: 2vw;
-  bottom: 3.4vw;
-  width: 4.2vw;
-}
+// .icon6 {
+//   right: 2rem;
+//   bottom: 3.4rem;
+//   width: 4.2rem;
+// }
 
-.icon7 {
-  right: 1.4vw;
-  bottom: 2.4vw;
-  width: 5.8vw;
-}
+// .icon7 {
+//   right: 1.4rem;
+//   bottom: 2.4rem;
+//   width: 5.8rem;
+// }
 
-.icon8 {
-  right: 1.4vw;
-  bottom: 2.4vw;
-  width: 6vw;
-}
+// .icon8 {
+//   right: 1.4rem;
+//   bottom: 2.4rem;
+//   width: 6rem;
+// }
 
-.icon9 {
-  right: 1.4vw;
-  bottom: 2.4vw;
-  width: 6vw;
-}
+// .icon9 {
+//   right: 1.4rem;
+//   bottom: 2.4rem;
+//   width: 6rem;
+// }
 
-.icon10 {
-  right: 1.4vw;
-  bottom: 2.4vw;
-  width: 6.2vw;
-}
+// .icon10 {
+//   right: 1.4rem;
+//   bottom: 2.4rem;
+//   width: 6.2rem;
+// }
 
-.icon11 {
-  right: 1.4vw;
-  bottom: 2.4vw;
-  width: 6.2vw;
-}
+// .icon11 {
+//   right: 1.4rem;
+//   bottom: 2.4rem;
+//   width: 6.2rem;
+// }
 
-.icon12 {
-  right: 1.4vw;
-  bottom: 2.4vw;
-  width: 6.2vw;
+// .icon12 {
+//   right: 1.4rem;
+//   bottom: 2.4rem;
+//   width: 6.2rem;
+// }
+
+// @include u.breakpoint(medium) {
+//   .icon1 {
+//     right: 2rem;
+//     bottom: 4rem;
+//     width: 9.4rem;
+//   }
+
+//   .icon2 {
+//     right: 2.4rem;
+//     bottom: 4rem;
+//     width: 8rem;
+//   }
+
+//   .icon3 {
+//     right: 2.4rem;
+//     bottom: 4rem;
+//     width: 8rem;
+//   }
+
+//   .icon4 {
+//     right: 4.6rem;
+//     bottom: 3.4rem;
+//     width: 6rem;
+//   }
+
+//   .icon5 {
+//     right: 2.4rem;
+//     bottom: 4rem;
+//     width: 10rem;
+//   }
+
+//   .icon6 {
+//     right: 4rem;
+//     bottom: 5rem;
+//     width: 7rem;
+//   }
+
+//   .icon7 {
+//     right: 2.4rem;
+//     bottom: 4rem;
+//     width: 10rem;
+//   }
+
+//   .icon8 {
+//     right: 2.4rem;
+//     bottom: 4rem;
+//     width: 10rem;
+//   }
+
+//   .icon9 {
+//     right: 2.4rem;
+//     bottom: 4rem;
+//     width: 10rem;
+//   }
+
+//   .icon10 {
+//     right: 2.4rem;
+//     bottom: 4rem;
+//     width: 10rem;
+//   }
+
+//   .icon11 {
+//     right: 2.4rem;
+//     bottom: 4rem;
+//     width: 10rem;
+//   }
+
+//   .icon12 {
+//     right: 2.4rem;
+//     bottom: 4rem;
+//     width: 10rem;
+//   }
+// }
+
+@include u.breakpoint(large) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.3rem;
+    height: 100%;
+  }
+  .icon {
+    width: var(--icon-width);
+    max-width: 20%;
+  }
+
+  .icon4 {
+    max-width: 16% !important;
+  }
 }
 
 @media (max-width: 800px) {
@@ -91,84 +185,19 @@
   }
 }
 
-@include u.breakpoint(medium) {
-  .icon1 {
-    right: 2vw;
-    bottom: 4vw;
-    width: 9.4vw;
-  }
-
-  .icon2 {
-    right: 2.4vw;
-    bottom: 4vw;
-    width: 8vw;
-  }
-
-  .icon3 {
-    right: 2.4vw;
-    bottom: 4vw;
-    width: 8vw;
-  }
-
-  .icon4 {
-    right: 4.6vw;
-    bottom: 3.4vw;
-    width: 6vw;
-  }
-
-  .icon5 {
-    right: 2.4vw;
-    bottom: 4vw;
-    width: 10vw;
-  }
-
-  .icon6 {
-    right: 4vw;
-    bottom: 5vw;
-    width: 7vw;
-  }
-
-  .icon7 {
-    right: 2.4vw;
-    bottom: 4vw;
-    width: 10vw;
-  }
-
-  .icon8 {
-    right: 2.4vw;
-    bottom: 4vw;
-    width: 10vw;
-  }
-
-  .icon9 {
-    right: 2.4vw;
-    bottom: 4vw;
-    width: 10vw;
-  }
-
-  .icon10 {
-    right: 2.4vw;
-    bottom: 4vw;
-    width: 10vw;
-  }
-
-  .icon11 {
-    right: 2.4vw;
-    bottom: 4vw;
-    width: 10vw;
-  }
-
-  .icon12 {
-    right: 2.4vw;
-    bottom: 4vw;
-    width: 10vw;
-  }
-}
-
-@include u.breakpoint(small) {
+@include u.breakpoint(xsmall) {
   .wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+  }
+
+  .icon {
+    width: var(--icon-width);
+    max-width: 24%;
+  }
+
+  .icon4 {
+    max-width: 18% !important;
   }
 }
