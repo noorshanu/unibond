@@ -3,4 +3,9 @@
     padding-bottom: 1rem;
     border-bottom: 2px solid var(--color-yellow);
   }
+
+  main {
+    display: grid;
+    gap: 2.4rem;
+  }
 }

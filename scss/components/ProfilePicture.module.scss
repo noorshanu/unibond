@@ -1,0 +1,28 @@
+.imageUploader {
+  width: 100%;
+  max-width: 22rem;
+  display: grid;
+  gap: 1.4rem;
+
+  .imagesUpload {
+    aspect-ratio: 1/1;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .imagesUpload {
+    border: 2px solid var(--color-yellow);
+    border-radius: 0.4rem;
+    overflow: hidden;
+  }
+}

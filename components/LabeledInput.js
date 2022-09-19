@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "scss/components/LabeledInput.module.scss";
 
-const LabeledInput = ({ label, placeholder, type, id = "123" }) => {
+const LabeledInput = ({ label, placeholder, type, id = "123", error }) => {
   return (
     <div className={styles.labledInput}>
       <label
@@ -13,7 +13,7 @@ const LabeledInput = ({ label, placeholder, type, id = "123" }) => {
       <input
         type={type}
         id={id}
-        className="fs-18px black weight-5"
+        className={`${error ? styles.error : ""} fs-18px black weight-5`}
         placeholder={placeholder}
       />
     </div>

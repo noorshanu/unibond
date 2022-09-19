@@ -1,12 +1,11 @@
 import React from "react";
-import styles from "scss/components/AccountSettingForm.module.scss";
 import FormButton from "./FormButton";
 import LabeledInput from "./LabeledInput";
 
 function AccountSettingForm() {
   return (
     <form>
-      <div className={styles.cards}>
+      <div className="form-grid">
         <LabeledInput
           label="First Name"
           type="text"
@@ -24,6 +23,7 @@ function AccountSettingForm() {
           type="text"
           placeholder="unibond12@gmail.com"
           id="Email"
+          error={true}
         />
         <LabeledInput
           label="Username"
@@ -38,7 +38,7 @@ function AccountSettingForm() {
           id="Phone"
         />
 
-        <div className={styles.btnWrapper}>
+        <div className="btnWrapper">
           <FormButton title="SAVE" />
         </div>
       </div>

@@ -5,6 +5,13 @@
     padding: 1.4rem 2rem;
     border-radius: 0.4rem;
 
+    &.error {
+      border: 1px solid rgb(255, 59, 59);
+      &:focus {
+        border: 2px solid red;
+      }
+    }
+
     &:focus {
       border: 2px solid var(--color-yellow);
     }
