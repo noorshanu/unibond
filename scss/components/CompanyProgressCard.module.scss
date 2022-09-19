@@ -75,15 +75,15 @@
   @include u.breakpoint(large) {
     padding: u.rem(16) u.rem(22);
 
-    .icon {
-      width: 3rem !important;
-    }
+    // .icon {
+    //   width: 3rem !important;
+    // }
   }
   @include u.breakpoint(xsmall) {
     .icon {
       position: static;
       transform: none;
-      width: 2.4rem !important;
+      // width: 2.4rem !important;
     }
   }
 }

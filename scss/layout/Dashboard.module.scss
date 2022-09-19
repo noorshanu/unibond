@@ -280,7 +280,11 @@
     }
   }
   @include u.breakpoint(xsmall) {
-    gap: 0.8rem 0.8rem;
+    gap: 1.4rem;
+
+    .cards {
+      gap: 1.4rem;
+    }
 
     .footer {
       .reportIcon {
@@ -318,7 +322,6 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-column: 1/-1;
-      gap: 0.8rem 0.8rem;
     }
   }
 }
