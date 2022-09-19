@@ -4,6 +4,7 @@ import { toggleState as toggleLoginScreenState } from "reduxState/slices/loginSc
 import OutsideClickDetector from "hooks/OutsideClickDetector";
 import { toggleState as toggleBlackScreenState } from "reduxState/slices/blackScreenSlice";
 import { forwardRef } from "react";
+import Link from "next/link";
 
 const UserDropdown = forwardRef((props, ref) => {
   const [stateValue, stateSetter] = props.state;
@@ -20,10 +21,13 @@ const UserDropdown = forwardRef((props, ref) => {
       className={`${styles.dropdown} ${stateValue ? styles.open : ""}`}
       ref={ref}
     >
-      <button className={`${styles.btn} weight-6`} onClick={login}>
+      <Link href="/profile">
+        <a className={`${styles.btn} fs-14px weight-6`}>Profile</a>
+      </Link>
+      <button className={`${styles.btn} fs-14px weight-6`} onClick={login}>
         Login
       </button>
-      <button className={`${styles.btn} weight-6`} onClick={login}>
+      <button className={`${styles.btn} fs-14px weight-6`} onClick={login}>
         Create Account
       </button>
     </div>

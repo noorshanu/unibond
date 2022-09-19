@@ -7,8 +7,8 @@ function UserCard({ img, notify, name, skill }) {
     <div className={styles.card}>
       <IconButton img={img} notify={notify} />
       <div>
-        <h2 className="fs-20px weight-7 black mb-5px lh-1">{name}</h2>
-        <p className="fs-14px black weight-4 lh-1">{skill}</p>
+        <h2 className="fs-14px weight-7 black mb-5px lh-1">{name}</h2>
+        <p className="fs-12px black weight-4 lh-1">{skill}</p>
       </div>
     </div>
   );

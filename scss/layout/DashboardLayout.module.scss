@@ -1,7 +1,7 @@
 @use "../utils" as u;
 @use "../globals/colors" as colors;
 
-$sidebar-width: 21vw;
+$sidebar-width: 20rem;
 
 .dashboard {
   display: grid;
@@ -22,9 +22,9 @@ $sidebar-width: 21vw;
     & > main {
       flex: 1;
 
-      padding: 1.6vw 2.6vw;
-      padding-bottom: 2.3vw;
-      padding-left: 7.5vw;
+      padding: 1.6rem 2.6rem;
+      padding-bottom: 2.3rem;
+      padding-left: 7.2rem;
     }
   }
 }

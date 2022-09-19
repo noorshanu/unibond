@@ -4,11 +4,12 @@
   position: absolute;
   top: 120%;
   right: 0;
-  width: 20vw;
+  width: 20rem;
   background: #000000;
-  box-shadow: 0px 0.2777777777777778vw 2.7777777777777777vw rgba(0, 0, 0, 0.35);
-  border-radius: 0.6944444444444444vw;
-  padding: 1.6vw 2vw;
+  box-shadow: 0px 0.2777777777777778rem 2.7777777777777777rem
+    rgba(0, 0, 0, 0.35);
+  border-radius: 0.6944444444444444rem;
+  padding: 1.5rem 2rem;
   z-index: 200;
 
   transform: translateY(10%);
@@ -24,22 +25,21 @@
 }
 
 .notificationCard {
-  border-bottom: 0.2vw solid colors.$gray;
-  padding: 0.7vw 0;
+  border-bottom: 0.2rem solid colors.$gray;
+  padding: 0.7rem 0;
   position: relative;
 
   p {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    margin-right: 1.6vw;
-    font-size: 1.1111111111111112vw;
+    margin-right: 1.6rem;
   }
 
   &.notify::before {
     content: "";
-    min-width: 0.4861111111111111vw;
-    min-height: 0.4861111111111111vw;
+    min-width: 0.4861111111111111rem;
+    min-height: 0.4861111111111111rem;
     background: colors.$yellow;
     position: absolute;
     top: 50%;

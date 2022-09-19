@@ -5,11 +5,13 @@ import React from "react";
 import styles from "scss/layout/DashboardLayout.module.scss";
 import Navbar from "./Navbar";
 
-function Dashboardlayout({ children, showSidebar = true, pageName }) {
+function Dashboardlayout(props) {
+  const { children, showSidebar = true, pageName } = props;
   const isBellow1024px = useMediaQuery("(max-width : 64em)");
 
   return (
     <div
+      {...props}
       className={`${styles.dashboard} ${showSidebar ? styles.showSidebar : ""}`}
     >
       <div className={styles.left}>

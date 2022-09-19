@@ -4,12 +4,15 @@ import SidebarHeader from "./SidebarHeader";
 import { AiOutlineSearch } from "react-icons/ai";
 import UserCard from "./UserCard";
 import dynamic from "next/dynamic";
+import { useSelector } from "react-redux";
 
 const DynamicMetaMask = dynamic(() => import("./MetaMaskDetails"), {
   ssr: false,
 });
 
 function Sidebar() {
+  const { isDark } = useSelector((state) => state.themeState);
+
   return (
     <div className={styles.sidebar}>
       <div className={`${styles.container}`}>
@@ -18,10 +21,13 @@ function Sidebar() {
 
       <div className={styles.usersCardsWrapper}>
         <div className={styles.container2}>
-          <header className={styles.userHeader}>
-            <h1 className="fs-30px black weight-7 lh-1">Live Now</h1>
+          <header className={`${styles.userHeader} fs-26px`}>
+            <h1 className="fs-inherit black weight-7 lh-1">Live Now</h1>
             <button>
-              <AiOutlineSearch size={24} className="gray" />
+              <AiOutlineSearch
+                className={isDark ? "white" : "gray"}
+                style={{ fontSize: "1.4em" }}
+              />
             </button>
           </header>
         </div>

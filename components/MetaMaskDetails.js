@@ -45,8 +45,10 @@ function MetaMaskDetails() {
         alt=""
       /> */}
       <div className={styles.body}>
-        <p className={`black weight-6 ${styles.title}`}>{post?.title}</p>
-        <p className={`${styles.subtitle} weight-6 gray`}>
+        <p className={`black weight-6 fs-12px mb-5px ${styles.title}`}>
+          {post?.title}
+        </p>
+        <p className={`${styles.subtitle} fs-10px weight-6 gray`}>
           {toText(post?.content).substring(0, 100).concat("...")}{" "}
           <a
             href={post?.link}
@@ -61,7 +63,7 @@ function MetaMaskDetails() {
 
       <a
         href="https://capitalcryptoacademy.com/"
-        className={`${styles.link} blue weight-6`}
+        className={`${styles.link} fs-10px blue weight-6`}
       >
         https://capitalcryptoacademy.com/
       </a>

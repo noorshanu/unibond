@@ -56,24 +56,21 @@ function Navbar({ pageName }) {
       ) : null}
 
       <div className={styles.pageDetails}>
-        <div className={`${styles.LogoTitle}`}>
-          <h1 className="fs-30px black weight-8">UniBond</h1>
-          <button className="pointer" onClick={refresh}>
-            <IoMdRefresh className={`${styles.refreshIcon} gray`} />
+        <div className={`${styles.LogoTitle} fs-24px`}>
+          <h1 className="black fs-inherit weight-8">UniBond</h1>
+          <button
+            className={`pointer gray ${styles.refreshIcon}`}
+            onClick={refresh}
+          >
+            <IoMdRefresh />
           </button>
         </div>
         <div className={styles.pageName} ref={PagenameDropdownRef}>
           <button
-            className="pointer"
+            className="pointer fs-14px"
             onClick={() => setIsPageNameDropdownShow((val) => !val)}
           >
-            <h2
-              className={`gray ${
-                isBellow1024px ? "fs-12px" : "fs-18px"
-              }  weight-6`}
-            >
-              {pageName}
-            </h2>
+            <span className="fs-inherit gray weight-6">{pageName}</span>
             <IoCaretDownCircleSharp className={`${styles.downIcon} gray`} />
           </button>
 

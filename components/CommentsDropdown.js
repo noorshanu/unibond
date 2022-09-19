@@ -7,9 +7,9 @@ const UserCard = ({ img, title, notify, notficationCount }) => {
   return (
     <div className={styles.userCard}>
       <IconButton img={img} notify={notify} />
-      <p className={`${styles.usercardTitle} white weight-7`}>{title}</p>
+      <p className="fs-14px white weight-7">{title}</p>
       {notficationCount ? (
-        <p className={`${styles.commentNumber} gray weight-5`}>
+        <p className={`${styles.commentNumber} fs-16px white weight-5`}>
           ({notficationCount})
         </p>
       ) : (

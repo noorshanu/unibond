@@ -4,13 +4,14 @@
   position: absolute;
   top: 120%;
   right: 0;
-  width: 20vw;
+  width: 20rem;
   background: #000000;
-  box-shadow: 0px 0.2777777777777778vw 2.7777777777777777vw rgba(0, 0, 0, 0.35);
-  border-radius: 0.6944444444444444vw;
-  padding: 1vw 2.2vw;
-  padding-bottom: 2vw;
-  z-index: 50;
+  box-shadow: 0px 0.2777777777777778rem 2.7777777777777777rem
+    rgba(0, 0, 0, 0.35);
+  border-radius: 0.6944444444444444rem;
+  padding: 1rem 2.2rem;
+  padding-bottom: 2rem;
+  z-index: 1000;
 
   transform: translateY(10%);
   opacity: 0;
@@ -27,23 +28,16 @@
 .userCard {
   display: flex;
   align-items: center;
-  padding: 0.8vw 0;
-  border-bottom: 0.2vw solid colors.$yellow;
+  padding: 0.8rem 0;
+  border-bottom: 0.2rem solid colors.$yellow;
   position: relative;
 
   & > :not(:last-child) {
-    margin-right: 1.2vw;
-  }
-
-  .usercardTitle {
-    font-size: 1vw;
-    color: white;
-    margin-right: 2vw;
+    margin-right: 1.2rem;
   }
 }
 
 .commentNumber {
-  font-size: 1.1vw;
   position: absolute;
   top: 50%;
   right: 0;

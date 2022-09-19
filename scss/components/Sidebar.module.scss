@@ -1,31 +1,31 @@
 @use "../utils/" as u;
 
 .container {
-  padding-left: 2.5vw;
-  padding-right: 2.5vw;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
 }
 .container2 {
-  padding-left: 1.8vw;
-  padding-right: 1.8vw;
+  padding-left: 1.7rem;
+  padding-right: 1.7rem;
 }
 
 .sidebar {
   height: 100%;
   background: var(--color-yellow);
-  padding: 2.6vw 0;
-  padding-top: 1.6vw;
+  padding: 2.2rem 0;
+  padding-top: 1.5rem;
   position: relative;
 
   display: grid;
   grid-template-rows: auto 1fr auto;
-  gap: 2.8vw;
+  gap: 2.2rem;
 
   .userHeader {
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 3px solid #d9d9d9;
-    padding: u.rem(4) 0;
+    padding: u.rem(8) 0;
 
     button {
       display: flex;
@@ -46,9 +46,8 @@
       z-index: 100;
       left: 0;
       width: 85%;
-      height: 4vw;
+      height: 3.9rem;
       background: var(--user-cards-dissolver);
-      //   border: 2px solid red;
       //   display: none;
       //   border: 2px solid red;
     }
@@ -56,15 +55,15 @@
     .usersCards {
       position: relative;
       height: auto;
-      margin-top: 1.6vw;
-      padding-top: 1.6%;
-      padding-bottom: 3vw;
-      padding-left: 2.5vw;
-      margin-right: 1.8vw;
+      margin-top: 1.5rem;
+      padding-top: 1.5%;
+      padding-bottom: 2.9rem;
+      padding-left: 2.4rem;
+      margin-right: 1.7rem;
       overflow-y: scroll;
 
       &::-webkit-scrollbar {
-        width: 0.6vw;
+        width: 0.5rem;
       }
 
       &::-webkit-scrollbar-track {
@@ -88,21 +87,21 @@
       //   }
 
       & > :not(:last-child) {
-        margin-bottom: 1.16vw;
+        margin-bottom: 1.14rem;
       }
     }
   }
 
   .commentIcon {
     position: absolute;
-    bottom: 1vw;
-    right: 1vw;
+    bottom: 1rem;
+    right: 1rem;
     cursor: pointer;
     display: flex;
     border-radius: 50%;
 
     img {
-      width: 4vw;
+      width: 4rem;
     }
   }
 }

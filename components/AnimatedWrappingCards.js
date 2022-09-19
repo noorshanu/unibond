@@ -79,7 +79,7 @@ export default function AnimatedWrappingCards() {
             title="Total Audit Ongoing"
             subtitle="05"
             inWeek="8"
-            iconWidth="36%"
+            iconWidth="4rem"
             icon="icons/total-audit-icon.png"
             style={{ height: "100%" }}
           />
@@ -94,7 +94,7 @@ export default function AnimatedWrappingCards() {
             title="Total Audit Ongoing"
             subtitle="05"
             inWeek="8"
-            iconWidth="36%"
+            iconWidth="4rem"
             icon="icons/total-audit-icon.png"
             style={{ height: "100%" }}
             isYellowCard={true}

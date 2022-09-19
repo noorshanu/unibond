@@ -12,7 +12,7 @@ function CompanyProgressCard({
   icon,
   inWeek,
   textCenter = false,
-  subtitleFontSize = "fs-46px",
+  subtitleFontSize = "fs-36px",
   className,
   flipCard = false,
   isYellowCard = false,
@@ -28,13 +28,7 @@ function CompanyProgressCard({
       } ${className} ${isYellowCard ? styles.yellowCard : ""}`}
       style={{ backgroundColor: bg, ...style }}
     >
-      <h2
-        className={`${
-          isBellow1024px ? "fs-14px" : "fs-18px"
-        } black weight-6 lh-1_4`}
-      >
-        {title}
-      </h2>
+      <h2 className={`fs-14px black weight-6 lh-1_4`}>{title}</h2>
       <div className={styles.mainTitleWithIcon}>
         <h1 className={`black weight-8 lh-1 ${subtitleFontSize}`}>
           {subtitle}
