@@ -2,7 +2,9 @@
   display: flex;
   align-items: center;
 
-  & > :not(:last-child) {
-    margin-right: 0.8rem;
+  &.spacing {
+    & > :not(:last-child) {
+      margin-right: 0.8rem;
+    }
   }
 }

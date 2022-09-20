@@ -2,8 +2,6 @@
 @use "../globals/colors" as colors;
 
 .button {
-  min-width: 2.6rem !important;
-  height: 2.6rem;
   background: var(--color-icon-button);
   box-shadow: u.rem(0) u.rem(8) u.rem(23) rgba(0, 0, 0, 0.21);
   border-radius: 0.7rem;
@@ -12,6 +10,16 @@
   justify-content: center;
   cursor: pointer;
   position: relative;
+
+  &.rounded {
+    border-radius: 50%;
+
+    & > img {
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+    }
+  }
 
   & > img {
     border-radius: 0.7rem;
@@ -55,8 +63,6 @@
   }
 
   @include u.breakpoint(large) {
-    min-width: 2.6rem !important;
-    height: 2.6rem;
     border-radius: 0.4rem !important;
 
     & > img {

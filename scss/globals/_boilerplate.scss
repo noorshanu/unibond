@@ -32,17 +32,23 @@ html {
   }
 }
 
-@include u.breakpoint("1400px") {
-  :root {
-    font-size: 82% !important;
-  }
-}
+// @media (min-width: 1440px) {
+//   body {
+//     border: 3px solid red;
+//   }
+// }
 
-@include u.breakpoint("xLarge") {
-  :root {
-    font-size: 68% !important;
-  }
-}
+// @include u.breakpoint("1400px") {
+//   :root {
+//     font-size: 82% !important;
+//   }
+// }
+
+// @include u.breakpoint("xLarge") {
+//   :root {
+//     font-size: 68% !important;
+//   }
+// }
 
 // COMPONENTS
 

@@ -12,14 +12,23 @@ const IconButton = forwardRef((props, ref) => {
     onClick,
     className,
     wrapperClassName,
+    style,
+    rounded = false,
   } = props;
 
   return (
     <div ref={ref ? ref : null} className={`relative ${wrapperClassName} `}>
       <div
-        className={`${styles.button} ${className} relative`}
+        className={`${styles.button} ${className} ${
+          rounded ? styles.rounded : null
+        } relative`}
         onClick={onClick ? onClick : null}
         disabled={onClick ? false : true}
+        style={
+          style
+            ? style
+            : { width: "2.6rem", minWidth: "2.6rem", height: "2.6rem" }
+        }
       >
         {icon ? (
           <div className={styles.iconWrap}>
