@@ -8,6 +8,11 @@
     justify-content: flex-start;
   }
 
+  .msgWrapper {
+    display: grid;
+    gap: 0.4rem;
+  }
+
   .msg {
     width: fit-content;
     max-width: 30rem;
@@ -16,12 +21,23 @@
     background-color: var(--color-orange);
   }
 
+  .time {
+    padding-left: 0.3rem;
+    width: fit-content;
+  }
+
   &.reverse {
     flex-direction: row-reverse;
 
     .userImg {
       width: 3.6rem;
       justify-content: flex-end;
+    }
+
+    .time {
+      margin-left: auto;
+      padding-left: 0rem;
+      padding-right: 0.3rem;
     }
   }
 }

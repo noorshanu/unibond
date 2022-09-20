@@ -1,7 +1,31 @@
 .wrapper {
-  padding: 1.4rem 2.6rem;
+  padding: 2.6rem 2.6rem;
+  padding-left: calc(2.6rem + 0.2rem);
   overflow-y: auto;
   display: grid;
   gap: 1.4rem;
   align-content: flex-start;
+
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 0.4rem);
+  height: 100%;
+
+  z-index: 10;
+
+  &::-webkit-scrollbar {
+    width: 0.4rem !important;
+    margin-right: 1rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent !important;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #f4bb007a !important;
+    border-radius: 2rem;
+  }
 }

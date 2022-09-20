@@ -9,7 +9,10 @@ function Chat() {
     <Dashboardlayout pagename="chat">
       <div className={styles.wrapper}>
         <ChatHeader />
-        <ChatBody />
+        <div className="relative">
+          <ChatBody />
+        </div>
+        <div></div>
       </div>
     </Dashboardlayout>
   );

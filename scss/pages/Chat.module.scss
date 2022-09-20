@@ -3,5 +3,7 @@
   border: 2px solid var(--color-yellow);
   border-radius: 0.6rem;
   display: grid;
-  // grid-template-rows: auto 100% auto;
+  grid-template-rows: auto 1fr auto;
+  position: relative;
+  gap: 0.6rem;
 }
