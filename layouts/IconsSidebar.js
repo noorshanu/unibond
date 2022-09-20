@@ -11,7 +11,7 @@ function IconsSidebar() {
   };
 
   return (
-    <div className={styles.sidebar}>
+    <div className={`${styles.sidebar}`}>
       <Link href="/" passHref>
         <button
           className={`pointer ${id === "1" ? styles.active : ""}`}

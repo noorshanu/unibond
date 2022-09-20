@@ -59,7 +59,7 @@ $sidebar-width: 20rem;
   }
 }
 
-@include u.breakpoint(large) {
+@include u.breakpoint(xLarge) {
   .dashboard {
     height: auto;
     padding-bottom: 4rem;
@@ -67,16 +67,19 @@ $sidebar-width: 20rem;
     &.showSidebar {
       grid-template-columns: 1fr;
     }
-
-    .left {
-      & > main {
-        padding: 1rem 3%;
-        // padding-left: 2rem;
-      }
-    }
   }
 
   .sidebar {
     display: none;
+  }
+}
+
+@include u.breakpoint(large) {
+  .dashboard {
+    .left {
+      & > main {
+        padding: 1rem 3%;
+      }
+    }
   }
 }

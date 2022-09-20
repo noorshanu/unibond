@@ -13,7 +13,7 @@ import { IKImage } from "imagekitio-react";
 import OutsideClickDetector from "hooks/OutsideClickDetector";
 
 function Navbar({ pagename }) {
-  const isBellow1024px = useMediaQuery("(max-width : 64em)");
+  const isBellow1280px = useMediaQuery("(max-width : 80em)");
   const [isLeftSidebarOpen, setIsLeftSidebarOpen] = useState(false);
   const [isRightSidebarOpen, setIsRightSidebarOpen] = useState(false);
   const [isPageNameDropdownShow, setIsPageNameDropdownShow] = useState(false);
@@ -46,7 +46,7 @@ function Navbar({ pagename }) {
         />
       </Link>
 
-      {isBellow1024px ? (
+      {isBellow1280px ? (
         <button
           className={styles.hamburger}
           onClick={() => setIsLeftSidebarOpen(true)}
@@ -84,7 +84,7 @@ function Navbar({ pagename }) {
         </div>
       </div>
 
-      {isBellow1024px ? (
+      {isBellow1280px ? (
         <IconButton
           img="peoples/user.png"
           className={styles.userIcon}
@@ -93,7 +93,7 @@ function Navbar({ pagename }) {
         ></IconButton>
       ) : null}
 
-      {isBellow1024px ? (
+      {isBellow1280px ? (
         <>
           <SidebarLeft state={[isLeftSidebarOpen, setIsLeftSidebarOpen]} />
           <SidebarRight state={[isRightSidebarOpen, setIsRightSidebarOpen]} />

@@ -115,7 +115,7 @@
   }
 }
 
-@include u.breakpoint(large) {
+@include u.breakpoint(xLarge) {
   .navbar {
     justify-content: space-between;
     padding: 0 3%;

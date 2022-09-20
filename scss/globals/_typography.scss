@@ -273,9 +273,17 @@ a {
       font-size: var(--fs-14px);
     }
   }
+
+  // SERVICES PAGE
+
+  .dashboard-services {
+    .fs-20px {
+      font-size: var(--fs-16px);
+    }
+  }
 }
 
-@include u.breakpoint(large) {
+@include u.breakpoint(xLarge) {
   .dashboard-navbar {
     .fs-24px {
       font-size: var(--fs-16px);
@@ -331,6 +339,16 @@ a {
   }
 }
 
+@include u.breakpoint(medium) {
+  // SERVICES PAGE
+
+  .dashboard-services {
+    .fs-20px {
+      font-size: var(--fs-14px);
+    }
+  }
+}
+
 @include u.breakpoint(small) {
   .dashboard-navbar {
     .fs-24px {
@@ -365,6 +383,9 @@ a {
     }
     .fs-22px {
       font-size: var(--fs-16px);
+    }
+    .fs-16px {
+      font-size: var(--fs-14px);
     }
   }
 

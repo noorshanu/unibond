@@ -160,6 +160,18 @@
 //   }
 // }
 
+@include u.breakpoint("1400px") {
+  .wrapper {
+    gap: 1.6rem;
+  }
+}
+
+// @include u.breakpoint(xLarge) {
+//   .wrapper {
+//     border: 2px solid red;
+//   }
+// }
+
 @include u.breakpoint(large) {
   .wrapper {
     display: grid;
