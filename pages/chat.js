@@ -3,6 +3,7 @@ import Dashboardlayout from "layouts/DashboardLayout";
 import styles from "scss/pages/Chat.module.scss";
 import ChatHeader from "components/ChatHeader";
 import ChatBody from "components/ChatBody";
+import ChatInput from "components/ChatInput";
 
 function Chat() {
   return (
@@ -12,7 +13,9 @@ function Chat() {
         <div className="relative">
           <ChatBody />
         </div>
-        <div></div>
+        <div>
+          <ChatInput />
+        </div>
       </div>
     </Dashboardlayout>
   );
