@@ -330,3 +330,59 @@ a {
     }
   }
 }
+
+@include u.breakpoint(small) {
+  .dashboard-navbar {
+    .fs-24px {
+      font-size: var(--fs-16px);
+    }
+    .fs-18px {
+      font-size: var(--fs-12px);
+    }
+    .fs-14px {
+      font-size: var(--fs-12px);
+    }
+    .fs-20px {
+      font-size: var(--fs-12px);
+    }
+    .fs-16px {
+      font-size: var(--fs-12px);
+    }
+  }
+
+  .dashboard-dashboard {
+    .fs-12px {
+      font-size: var(--fs-10px);
+    }
+    .fs-14px {
+      font-size: var(--fs-10px);
+    }
+    .fs-18px {
+      font-size: var(--fs-14px);
+    }
+    .fs-36px {
+      font-size: var(--fs-22px);
+    }
+    .fs-22px {
+      font-size: var(--fs-16px);
+    }
+  }
+
+  .dashboard-sidebar {
+    .fs-26px {
+      font-size: var(--fs-20px);
+    }
+    .fs-14px {
+      font-size: var(--fs-12px);
+    }
+    .fs-12px {
+      font-size: var(--fs-10px);
+    }
+    .fs-10px {
+      font-size: var(--fs-8px);
+    }
+    .fs-16px {
+      font-size: var(--fs-14px);
+    }
+  }
+}

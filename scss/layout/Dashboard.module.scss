@@ -284,10 +284,10 @@
     }
   }
   @include u.breakpoint(xsmall) {
-    gap: 1.4rem;
+    gap: 1rem;
 
     .cards {
-      gap: 1.4rem;
+      gap: 1rem;
     }
 
     .footer {

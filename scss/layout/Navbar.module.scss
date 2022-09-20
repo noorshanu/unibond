@@ -118,7 +118,8 @@
 @include u.breakpoint(large) {
   .navbar {
     justify-content: space-between;
-    padding: u.rem(26) 3%;
+    padding: 0 3%;
+    height: u.rem(70);
 
     & > :not(:last-child) {
       margin-right: 0rem;
