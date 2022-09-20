@@ -57,9 +57,10 @@
 
   main {
     flex: 1;
+
     a {
       display: block;
-      padding: u.rem(12) $padding-x;
+      padding: 0 $padding-x;
       position: relative;
 
       .sidebarlinkIcon {
@@ -80,7 +81,7 @@
     }
 
     & > :not(:last-child) {
-      margin-bottom: 0.8rem;
+      margin-bottom: 1.8rem;
     }
   }
 
