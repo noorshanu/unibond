@@ -24,6 +24,9 @@ const UserDropdown = forwardRef((props, ref) => {
       <Link href="/profile">
         <a className={`${styles.btn} fs-14px weight-6`}>Profile</a>
       </Link>
+      <Link href="/orders">
+        <a className={`${styles.btn} fs-14px weight-6`}>Orders</a>
+      </Link>
       <button className={`${styles.btn} fs-14px weight-6`} onClick={login}>
         Login
       </button>

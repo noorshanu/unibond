@@ -120,6 +120,8 @@
 
   .pageName {
     justify-content: center;
+    margin: 0 auto;
+    width: fit-content;
 
     & > :not(:last-child) {
       margin-right: u.rem(8);

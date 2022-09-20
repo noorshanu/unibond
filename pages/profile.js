@@ -6,13 +6,14 @@ import AccountSettingForm from "components/AccountSettingForm";
 import ChangePassword from "components/ChangePassword";
 import ProfilePicture from "components/ProfilePicture";
 import SocialProfile from "components/SocialProfile";
+import TitleBar from "components/TitleBar";
 
 function Profile() {
   return (
     <Dashboardlayout pagename="Profile">
       <div className={styles.wrapper}>
         <header className="mb-45px">
-          <h1 className="black fs-36px weight-6">Account Settings</h1>
+          <TitleBar title="Account Settings" />
         </header>
         <main>
           <ProfileAccordion buttonTitle="Account Settings">
