@@ -28,13 +28,13 @@
   height: fit-content;
   min-height: 100%;
 
-  width: u.rem(300);
+  width: u.rem(260);
   background-color: var(--right-sidebar-bg);
   display: flex;
   flex-direction: column;
   transition: all 0.3s ease;
   text-align: right;
-  transform: translateX(calc(u.rem(300)));
+  transform: translateX(calc(u.rem(260)));
 
   &.open {
     transform: translateX(0);
@@ -44,11 +44,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
     padding: $padding-y $padding-x;
+    padding-top: 2rem;
 
     .closeBtn {
-      font-size: 1.8rem;
+      font-size: 1.4rem;
       display: flex;
       cursor: pointer;
     }

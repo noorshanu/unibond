@@ -1,3 +1,5 @@
+@use "../utils" as u;
+
 .card {
   background: var(--progress-card-bg);
   box-shadow: 0 0.7638888888888888rem 4.722222222222222rem 0.1388888888888889rem
@@ -34,4 +36,14 @@
 .link {
   display: block;
   // font-size: 0.6rem !important;
+}
+
+@include u.breakpoint("1400px") {
+  .banner {
+    height: 42%;
+  }
+
+  .card {
+    height: 10rem;
+  }
 }

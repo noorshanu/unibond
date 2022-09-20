@@ -25,6 +25,12 @@ $sidebar-width: 20rem;
       padding: 1.6rem 2.6rem;
       padding-bottom: 2.3rem;
       padding-left: 7.2rem;
+
+      @include u.breakpoint("1400px") {
+        padding: 1.6rem 2rem;
+        padding-bottom: 2rem;
+        padding-left: 5.8rem;
+      }
     }
   }
 }
@@ -37,6 +43,20 @@ $sidebar-width: 20rem;
   bottom: 0;
   width: $sidebar-width;
   height: 100%;
+}
+
+@include u.breakpoint("1400px") {
+  $sidebar-width: 15rem;
+
+  .dashboard {
+    &.showSidebar {
+      grid-template-columns: 1fr $sidebar-width;
+    }
+  }
+
+  .sidebar {
+    width: $sidebar-width;
+  }
 }
 
 @include u.breakpoint(large) {

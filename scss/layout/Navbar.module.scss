@@ -100,6 +100,21 @@
   }
 }
 
+@include u.breakpoint("1400px") {
+  .navbar {
+    & > :not(:last-child) {
+      margin-right: 1.8rem;
+    }
+  }
+
+  .logo {
+    width: 3.4rem;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+  }
+}
+
 @include u.breakpoint(large) {
   .navbar {
     justify-content: space-between;
@@ -124,7 +139,14 @@
     width: fit-content;
 
     & > :not(:last-child) {
-      margin-right: u.rem(8);
+      // margin-right: u.rem(8);
+      margin-right: u.rem(0);
+    }
+
+    & > button {
+      & > :not(:last-child) {
+        margin-right: u.rem(0);
+      }
     }
   }
 
@@ -144,13 +166,17 @@
   }
 
   .downIcon {
-    width: 0.6rem;
-    height: 0.6rem;
+    // width: 0.6rem;
+    // height: 0.6rem;
+    display: none;
   }
 
   .LogoTitle {
     margin-bottom: 0.5rem;
     text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 0.4rem;
 
     & > :not(:last-child) {
       margin-right: u.rem(0);

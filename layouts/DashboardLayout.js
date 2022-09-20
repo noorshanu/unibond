@@ -24,7 +24,7 @@ function Dashboardlayout(props) {
 
       {showSidebar ? (
         !isBellow1024px ? (
-          <div className={styles.sidebar}>
+          <div className={`${styles.sidebar} dashboard-sidebar`}>
             <Sidebar />
           </div>
         ) : (

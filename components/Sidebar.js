@@ -23,11 +23,8 @@ function Sidebar() {
         <div className={styles.container2}>
           <header className={`${styles.userHeader} fs-26px`}>
             <h1 className="fs-inherit black weight-7 lh-1">Live Now</h1>
-            <button>
-              <AiOutlineSearch
-                className={isDark ? "white" : "gray"}
-                style={{ fontSize: "1.4em" }}
-              />
+            <button style={{ fontSize: ".8em" }}>
+              <AiOutlineSearch className={isDark ? "white" : "gray"} />
             </button>
           </header>
         </div>

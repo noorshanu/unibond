@@ -35,7 +35,7 @@ function Navbar({ pagename }) {
   };
 
   return (
-    <div className={styles.navbar}>
+    <div className={`${styles.navbar} dashboard-navbar`}>
       <Link href="/" passHref>
         <IKImage
           path="images/Eggg.png"

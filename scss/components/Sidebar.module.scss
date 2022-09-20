@@ -76,6 +76,14 @@
         background-color: var(--color-gray);
       }
 
+      @include u.breakpoint("1400px") {
+        padding-left: 1.8rem;
+
+        &::-webkit-scrollbar {
+          width: 0.26rem;
+        }
+      }
+
       //   &:hover {
       //     &::-webkit-scrollbar-track {
       //       background-color: #d9d9d9;
@@ -103,5 +111,16 @@
     img {
       width: 4rem;
     }
+  }
+}
+
+@include u.breakpoint("1400px") {
+  .container {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
+  .container2 {
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
   }
 }

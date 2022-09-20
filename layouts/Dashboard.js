@@ -10,9 +10,13 @@ import AnimatedWrappingCards from "components/AnimatedWrappingCards";
 
 function Dashboard() {
   return (
-    <main className={styles.main}>
+    <main className={`${styles.main} dashboard-dashboard`}>
       <CompanyProgressCard
-        title="Total Development Ongoing"
+        title={
+          <span>
+            Total Development <br /> Ongoing
+          </span>
+        }
         subtitle="12"
         inWeek="25"
         icon="icons/development-icon.png"
@@ -23,7 +27,11 @@ function Dashboard() {
       <AnimatedWrappingCards />
 
       <CompanyProgressCard
-        title="Total Marketing Ongoing"
+        title={
+          <span>
+            Total Marketing <br /> Ongoing
+          </span>
+        }
         subtitle="13"
         inWeek="15"
         icon="icons/total-marketing-icon.png"

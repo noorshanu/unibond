@@ -1,4 +1,5 @@
 import OutsideClickDetector from "hooks/OutsideClickDetector";
+import useMediaQuery from "hooks/useMediaQuery";
 import { IKImage } from "imagekitio-react";
 import { forwardRef } from "react";
 import styles from "scss/components/IconButton.module.scss";
@@ -15,6 +16,7 @@ const IconButton = forwardRef((props, ref) => {
     style,
     rounded = false,
   } = props;
+  const isBellow1400px = useMediaQuery("(max-width : 1400px)");
 
   return (
     <div ref={ref ? ref : null} className={`relative ${wrapperClassName} `}>
@@ -27,7 +29,11 @@ const IconButton = forwardRef((props, ref) => {
         style={
           style
             ? style
-            : { width: "2.6rem", minWidth: "2.6rem", height: "2.6rem" }
+            : {
+                width: isBellow1400px ? "2rem" : "2.6rem",
+                minWidth: isBellow1400px ? "2rem" : "2.6rem",
+                height: isBellow1400px ? "2rem" : "2.6rem",
+              }
         }
       >
         {icon ? (
