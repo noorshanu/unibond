@@ -25,7 +25,8 @@
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: #f4bb007a !important;
+    // background-color: #f4bb007a !important;
+    border: 2px solid var(--color-yellow);
     border-radius: 2rem;
   }
 }

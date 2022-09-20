@@ -1,0 +1,28 @@
+.wrapper {
+  padding: 1.4rem 2.6rem;
+  border-top: 3px solid var(--color-yellow);
+
+  .form {
+    display: flex;
+    align-items: center;
+
+    & > :not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
+
+  .input {
+    flex: 1;
+    border: 3px solid rgba(244, 187, 0, 1);
+    width: 100%;
+    border-radius: 0.4rem;
+    padding: 1rem 2rem;
+  }
+
+  .sendButton {
+    font-size: 2.4rem;
+    color: var(--color-yellow);
+    display: flex;
+    cursor: pointer;
+  }
+}

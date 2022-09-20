@@ -10,6 +10,7 @@ function ChatHeader() {
         img="peoples/user1.png"
         name="Mike Taylor"
         skill="Solidity Expert"
+        // skill="...Typing"
         titleFontSize="fs-18px"
         titleSpacing=".4em"
         iconStyles={{
