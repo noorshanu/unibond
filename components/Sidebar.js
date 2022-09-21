@@ -4,7 +4,8 @@ import SidebarHeader from "./SidebarHeader";
 import { AiOutlineSearch } from "react-icons/ai";
 import UserCard from "./UserCard";
 import dynamic from "next/dynamic";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleModel } from "reduxState/slices/chatModel";
 
 const DynamicMetaMask = dynamic(() => import("./MetaMaskDetails"), {
   ssr: false,
@@ -12,6 +13,7 @@ const DynamicMetaMask = dynamic(() => import("./MetaMaskDetails"), {
 
 function Sidebar() {
   const { isDark } = useSelector((state) => state.themeState);
+  const dispatch = useDispatch();
 
   return (
     <div className={styles.sidebar}>
@@ -29,13 +31,21 @@ function Sidebar() {
           </header>
         </div>
         <main className={styles.usersCards}>
-          <UserCard
-            notify={true}
-            img="peoples/user1.png"
-            name="Mike Taylor"
-            skill="Solidity Expert"
-          />
-          <UserCard
+          {new Array(20).fill("").map((item, index) => (
+            <button
+              key={index}
+              className="pointer"
+              onClick={() => dispatch(toggleModel(true))}
+            >
+              <UserCard
+                notify={true}
+                img="peoples/user1.png"
+                name="Mike Taylor"
+                skill="Solidity Expert"
+              />
+            </button>
+          ))}
+          {/* <UserCard
             notify={true}
             img="peoples/user2.png"
             name="James Green"
@@ -107,7 +117,7 @@ function Sidebar() {
             img="peoples/user2.png"
             name="Carmen Lewis"
             skill="Solidity Expert"
-          />
+          /> */}
         </main>
       </div>
 

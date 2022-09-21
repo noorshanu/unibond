@@ -24,8 +24,8 @@ function MyApp({ Component, pageProps }) {
       <IKContext urlEndpoint="https://ik.imagekit.io/l4k8brcjb/uniBond/">
         <IconsSidebar />
         <LoginScreen />
-        <BlackScreen />
         <ReduxStateProvider />
+        <BlackScreen />
         <Component {...pageProps} />
       </IKContext>
     </Provider>

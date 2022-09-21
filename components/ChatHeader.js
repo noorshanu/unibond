@@ -2,7 +2,7 @@ import React from "react";
 import styles from "scss/components/ChatHeader.module.scss";
 import UserCard from "./UserCard";
 
-function ChatHeader() {
+function ChatHeader({ RightComponent }) {
   return (
     <div className={styles.chat_header}>
       <UserCard
@@ -18,6 +18,10 @@ function ChatHeader() {
           height: "3.2rem",
         }}
       />
+
+      <div className={styles.rightComponent}>
+        {RightComponent && <RightComponent />}
+      </div>
     </div>
   );
 }

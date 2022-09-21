@@ -1,10 +1,12 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-function BlackScreen() {
+function BlackScreen({ showScreen = false }) {
   const { show } = useSelector((state) => state.blackScreenState);
 
-  return <div className={`black-screen ${show ? "show" : ""}`}></div>;
+  return (
+    <div className={`black-screen ${show || showScreen ? "show" : ""}`}></div>
+  );
 }
 
 export default BlackScreen;

@@ -1,4 +1,16 @@
 .chat_header {
   padding: 1.4rem 2.6rem;
   border-bottom: 3px solid var(--color-yellow);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .rightComponent {
+    display: flex;
+    align-items: center;
+
+    & > :not(:first-child) {
+      margin-left: 1.6rem;
+    }
+  }
 }
