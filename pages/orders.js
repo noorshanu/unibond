@@ -1,22 +1,9 @@
+import OrderRow from "components/OrderRow";
 import TitleBar from "components/TitleBar";
 import useMediaQuery from "hooks/useMediaQuery";
 import Dashboardlayout from "layouts/DashboardLayout";
 import React from "react";
 import styles from "scss/pages/Orders.module.scss";
-
-const StatusSelector = ({ options }) => {
-  return (
-    <select id="lang" className={`${styles.statusSelector} fs-16px weight-5`}>
-      {options.map((item, index) => {
-        return (
-          <option key={index} value={item.title} className="fs-16px weight-5">
-            {item.title}
-          </option>
-        );
-      })}
-    </select>
-  );
-};
 
 function Orders() {
   const isBellow760px = useMediaQuery("(max-width : 47.5em)");
@@ -45,30 +32,16 @@ function Orders() {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td className="unchange-gray fs-16px weight-5" data-cell="sno">
-                  1
-                </td>
-                <td className="unchange-gray fs-16px weight-5">letscheck</td>
-                <td className="unchange-gray fs-16px weight-5">
-                  letscheck@bmail.com
-                </td>
-                <td className="unchange-gray fs-16px weight-5">
-                  +9179906445222384729384798
-                </td>
-                <td className="unchange-gray fs-16px weight-5">Robo</td>
-                <td className="unchange-gray fs-16px weight-5">UI/UX</td>
-                <td className="unchange-gray fs-16px weight-5">Web UI</td>
-                <td>
-                  <StatusSelector
-                    options={[
-                      { title: "Pending" },
-                      { title: "Approved" },
-                      { title: "Completed" },
-                    ]}
-                  />
-                </td>
-              </tr>
+              <OrderRow />
+              <OrderRow />
+              <OrderRow />
+              <OrderRow />
+              <OrderRow />
+              <OrderRow />
+              <OrderRow />
+              <OrderRow />
+              <OrderRow />
+              <OrderRow />
             </tbody>
           </table>
         </div>
