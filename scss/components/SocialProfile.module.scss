@@ -23,8 +23,19 @@
       display: flex;
     }
   }
+}
 
-  @include u.breakpoint("1400px") {
+@include u.breakpoint("1400px") {
+  .card {
     padding: 1rem 2rem;
+  }
+}
+@include u.breakpoint(medium) {
+  .wrapper {
+    gap: 1rem;
+  }
+
+  .card {
+    padding: 0.8rem 1.4rem;
   }
 }

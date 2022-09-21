@@ -7,12 +7,15 @@ import ChangePassword from "components/ChangePassword";
 import ProfilePicture from "components/ProfilePicture";
 import SocialProfile from "components/SocialProfile";
 import TitleBar from "components/TitleBar";
+import useMediaQuery from "hooks/useMediaQuery";
 
 function Profile() {
+  const isBellow760px = useMediaQuery("(max-width : 47.5em)");
+
   return (
     <Dashboardlayout pagename="Profile">
       <div className={`${styles.wrapper} dashboard-profile`}>
-        <header className="mb-45px">
+        <header className={isBellow760px ? "mb-25px" : "mb-45px"}>
           <TitleBar title="Account Settings" />
         </header>
         <main>
