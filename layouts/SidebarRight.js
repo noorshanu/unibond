@@ -42,7 +42,7 @@ function SidebarRight(props) {
         <main>
           <Link href="/" passHref>
             <a href="">
-              <span className="fs-20px black weight-6">Messages</span>
+              <span className="fs-16px black weight-6">Messages</span>
               <IconButton
                 wrapperClassName={styles.sidebarlinkIcon}
                 icon="icons/commentsIcon.svg"
@@ -51,7 +51,7 @@ function SidebarRight(props) {
           </Link>
           <Link href="/" passHref>
             <a>
-              <span className="fs-20px black weight-6">Notification</span>
+              <span className="fs-16px black weight-6">Notification</span>
               <IconButton
                 wrapperClassName={styles.sidebarlinkIcon}
                 icon="icons/BellIcon.svg"
@@ -61,17 +61,17 @@ function SidebarRight(props) {
           </Link>
           <Link href="/profile" passHref>
             <a>
-              <span className="fs-20px black weight-6">My Account</span>
+              <span className="fs-16px black weight-6">My Account</span>
             </a>
           </Link>
           <Link href="/orders" passHref>
             <a>
-              <span className="fs-20px black weight-6">My Orders</span>
+              <span className="fs-16px black weight-6">My Orders</span>
             </a>
           </Link>
           <Link href="/" passHref>
             <a className={styles.logoutBtn}>
-              <span className="fs-20px black weight-6">Log Out</span>
+              <span className="fs-16px black weight-6">Log Out</span>
             </a>
           </Link>
         </main>
