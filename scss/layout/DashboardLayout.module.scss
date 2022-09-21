@@ -56,8 +56,10 @@ $sidebar-width: 20rem;
 
 @include u.breakpoint(large) {
   .dashboard {
+    min-height: 100vh;
     height: auto;
-    padding-bottom: 4rem;
+    max-height: auto;
+    padding-bottom: 6rem;
 
     &.showSidebar {
       grid-template-columns: 1fr;

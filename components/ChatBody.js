@@ -38,7 +38,7 @@ function ChatBody() {
       <ChatMessage
         time="12 Sep | 6:06 AM"
         isUser={true}
-        chat="This is my message"
+        chat="This is my message This is my message This is my message"
       />
     </div>
   );
