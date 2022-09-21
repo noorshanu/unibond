@@ -59,12 +59,12 @@ function SidebarRight(props) {
               />
             </a>
           </Link>
-          <Link href="/" passHref>
+          <Link href="/profile" passHref>
             <a>
               <span className="fs-20px black weight-6">My Account</span>
             </a>
           </Link>
-          <Link href="/" passHref>
+          <Link href="/orders" passHref>
             <a>
               <span className="fs-20px black weight-6">My Orders</span>
             </a>
