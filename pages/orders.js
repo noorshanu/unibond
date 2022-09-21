@@ -1,4 +1,5 @@
 import TitleBar from "components/TitleBar";
+import useMediaQuery from "hooks/useMediaQuery";
 import Dashboardlayout from "layouts/DashboardLayout";
 import React from "react";
 import styles from "scss/pages/Orders.module.scss";
@@ -18,10 +19,12 @@ const StatusSelector = ({ options }) => {
 };
 
 function Orders() {
+  const isBellow760px = useMediaQuery("(max-width : 47.5em)");
+
   return (
     <Dashboardlayout pagename="Orders">
-      <div className={styles.wrapper}>
-        <div className="mb-45px">
+      <div className={`${styles.wrapper} dashboard-orders`}>
+        <div className={isBellow760px ? "mb-25px" : "mb-45px"}>
           <TitleBar title="My Orders" />
         </div>
 

@@ -295,6 +295,16 @@ a {
       font-size: var(--fs-26px);
     }
   }
+
+  .dashboard-orders {
+    .fs-36px {
+      font-size: var(--fs-26px);
+    }
+
+    .fs-16px {
+      font-size: var(--fs-14px);
+    }
+  }
 }
 
 @include u.breakpoint(xLarge) {
@@ -368,6 +378,16 @@ a {
     }
     .fs-36px {
       font-size: var(--fs-20px);
+    }
+  }
+
+  .dashboard-orders {
+    .fs-36px {
+      font-size: var(--fs-20px);
+    }
+
+    .fs-16px {
+      font-size: var(--fs-12px);
     }
   }
 }
@@ -454,6 +474,16 @@ a {
     }
     .fs-36px {
       font-size: var(--fs-18px);
+    }
+  }
+
+  .dashboard-orders {
+    .fs-36px {
+      font-size: var(--fs-18px);
+    }
+
+    .fs-16px {
+      font-size: var(--fs-12px);
     }
   }
 }
