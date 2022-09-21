@@ -1,3 +1,5 @@
+@use "../utils" as u;
+
 .imageUploader {
   width: 100%;
   max-width: 22rem;
@@ -24,5 +26,12 @@
     border: 2px solid var(--color-yellow);
     border-radius: 0.4rem;
     overflow: hidden;
+  }
+
+  @include u.breakpoint("1400px") {
+    max-width: 12rem;
+  }
+  @include u.breakpoint(small) {
+    max-width: 100%;
   }
 }

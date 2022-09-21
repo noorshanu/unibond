@@ -1,6 +1,8 @@
+@use "../utils" as u;
+
 .labledInput {
   input {
-    border: 1px solid var(--color-yellow);
+    border: 1px solid var(--color-orange);
     width: 100%;
     padding: 1.4rem 2rem;
     border-radius: 0.4rem;
@@ -13,7 +15,11 @@
     }
 
     &:focus {
-      border: 2px solid var(--color-yellow);
+      border: 1px solid var(--color-yellow);
+    }
+
+    @include u.breakpoint("1400px") {
+      padding: 0.8rem 1.4rem;
     }
   }
 }

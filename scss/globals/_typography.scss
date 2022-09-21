@@ -274,11 +274,25 @@ a {
     }
   }
 
-  // SERVICES PAGE
-
   .dashboard-services {
     .fs-20px {
       font-size: var(--fs-16px);
+    }
+  }
+
+  .dashboard-profile {
+    .fs-16px {
+      font-size: var(--fs-14px);
+    }
+
+    .fs-18px {
+      font-size: var(--fs-14px);
+    }
+    .fs-24px {
+      font-size: var(--fs-18px);
+    }
+    .fs-36px {
+      font-size: var(--fs-26px);
     }
   }
 }
@@ -335,6 +349,25 @@ a {
     }
     .fs-16px {
       font-size: var(--fs-14px);
+    }
+  }
+}
+
+@include u.breakpoint(large) {
+  .dashboard-profile {
+    .fs-16px {
+      font-size: var(--fs-12px);
+    }
+
+    .fs-18px {
+      font-size: var(--fs-12px);
+    }
+
+    .fs-24px {
+      font-size: var(--fs-16px);
+    }
+    .fs-36px {
+      font-size: var(--fs-20px);
     }
   }
 }

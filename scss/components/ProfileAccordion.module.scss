@@ -47,6 +47,47 @@
     }
   }
 
+  @include u.breakpoint("1400px") {
+    $padding-x: u.rem(32);
+    $padding-y: u.rem(18);
+
+    & > button {
+      padding: $padding-y $padding-x;
+
+      & > p {
+        text-align: left;
+        margin-right: 1rem;
+      }
+    }
+
+    & > main {
+      & > div {
+        padding: $padding-y $padding-x;
+      }
+    }
+  }
+
+  @include u.breakpoint(medium) {
+    $padding-x: u.rem(26);
+    $padding-y: u.rem(10);
+
+    & > button {
+      padding: $padding-y $padding-x;
+
+      & > p {
+        text-align: left;
+        margin-right: 1rem;
+      }
+    }
+
+    & > main {
+      & > div {
+        padding: $padding-y $padding-x;
+        padding-bottom: 1.4rem;
+      }
+    }
+  }
+
   //   @include u.breakpoint(small) {
   //     & > button {
   //       padding: u.rem(14) u.rem(10);

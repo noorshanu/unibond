@@ -67,6 +67,28 @@
   border: 2px solid var(--color-yellow);
 }
 
+@include u.breakpoint("1400px") {
+  .form-button {
+    padding: 0.8rem 2rem;
+  }
+}
+
+@include u.breakpoint(medium) {
+  .form-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.8rem;
+
+    .btnWrapper {
+      grid-column: unset;
+
+      button {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
 @include u.breakpoint(xsmall) {
   .login-form {
     & .fs-16px {

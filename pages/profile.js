@@ -11,7 +11,7 @@ import TitleBar from "components/TitleBar";
 function Profile() {
   return (
     <Dashboardlayout pagename="Profile">
-      <div className={styles.wrapper}>
+      <div className={`${styles.wrapper} dashboard-profile`}>
         <header className="mb-45px">
           <TitleBar title="Account Settings" />
         </header>

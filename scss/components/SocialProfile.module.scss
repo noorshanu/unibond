@@ -1,3 +1,5 @@
+@use "../utils" as u;
+
 .wrapper {
   display: grid;
   gap: 1.6rem;
@@ -20,5 +22,9 @@
       font-size: 1.2em;
       display: flex;
     }
+  }
+
+  @include u.breakpoint("1400px") {
+    padding: 1rem 2rem;
   }
 }

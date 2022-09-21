@@ -1,6 +1,15 @@
+@use "../utils" as u;
+
 .wrapper {
   main {
     display: grid;
     gap: 2.4rem;
+
+    @include u.breakpoint(large) {
+      gap: 1.8rem;
+    }
+    @include u.breakpoint(small) {
+      gap: 1.4rem;
+    }
   }
 }
