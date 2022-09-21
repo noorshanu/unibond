@@ -62,19 +62,19 @@
     height: 0.9rem;
   }
 
-  @include u.breakpoint("1400px") {
-    border-radius: 0.4rem;
+  // @include u.breakpoint("1400px") {
+  //   border-radius: 0.4rem;
 
-    .notficationCircle {
-      width: 0.5rem;
-      height: 0.5rem;
-    }
+  //   .notficationCircle {
+  //     width: 0.5rem;
+  //     height: 0.5rem;
+  //   }
 
-    & > .notficationCircle {
-      width: 0.6rem;
-      height: 0.6rem;
-    }
-  }
+  //   & > .notficationCircle {
+  //     width: 0.6rem;
+  //     height: 0.6rem;
+  //   }
+  // }
 
   @include u.breakpoint(large) {
     border-radius: 0.4rem !important;

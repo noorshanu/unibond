@@ -28,13 +28,13 @@
   height: fit-content;
   min-height: 100%;
 
-  width: u.rem(260);
+  width: u.rem(300);
   background-color: var(--right-sidebar-bg);
   display: flex;
   flex-direction: column;
   transition: all 0.3s ease;
   text-align: right;
-  transform: translateX(calc(u.rem(260)));
+  transform: translateX(calc(u.rem(300)));
 
   &.open {
     transform: translateX(0);
@@ -49,7 +49,7 @@
     padding-top: 2rem;
 
     .closeBtn {
-      font-size: 1.4rem;
+      font-size: 1.8rem;
       display: flex;
       cursor: pointer;
     }
@@ -81,7 +81,7 @@
     }
 
     & > :not(:last-child) {
-      margin-bottom: 1.8rem;
+      margin-bottom: 2.6rem;
     }
   }
 

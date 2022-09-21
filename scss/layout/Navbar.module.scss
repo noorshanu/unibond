@@ -100,26 +100,11 @@
   }
 }
 
-@include u.breakpoint("1400px") {
-  .navbar {
-    & > :not(:last-child) {
-      margin-right: 1.8rem;
-    }
-  }
-
-  .logo {
-    width: 3.4rem;
-    position: relative;
-    z-index: 10;
-    cursor: pointer;
-  }
-}
-
-@include u.breakpoint(xLarge) {
+@include u.breakpoint(large) {
   .navbar {
     justify-content: space-between;
     padding: 0 3%;
-    height: u.rem(70);
+    height: u.rem(110);
 
     & > :not(:last-child) {
       margin-right: 0rem;

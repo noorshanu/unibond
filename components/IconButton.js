@@ -16,7 +16,6 @@ const IconButton = forwardRef((props, ref) => {
     style,
     rounded = false,
   } = props;
-  const isBellow1400px = useMediaQuery("(max-width : 1400px)");
 
   return (
     <div ref={ref ? ref : null} className={`relative ${wrapperClassName} `}>
@@ -30,9 +29,9 @@ const IconButton = forwardRef((props, ref) => {
           style
             ? style
             : {
-                width: isBellow1400px ? "2rem" : "2.6rem",
-                minWidth: isBellow1400px ? "2rem" : "2.6rem",
-                height: isBellow1400px ? "2rem" : "2.6rem",
+                width: "2.6rem",
+                minWidth: "2.6rem",
+                height: "2.6rem",
               }
         }
       >

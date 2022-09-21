@@ -167,10 +167,6 @@
     }
   }
 
-  @include u.breakpoint("1400px") {
-    gap: 1.8rem 1.2rem;
-  }
-
   @include u.breakpoint(large) {
     gap: 1.2rem 1.2rem;
 
@@ -284,10 +280,10 @@
     }
   }
   @include u.breakpoint(xsmall) {
-    gap: 1rem;
+    gap: 1.5rem;
 
     .cards {
-      gap: 1rem;
+      gap: 1.5rem;
     }
 
     .footer {

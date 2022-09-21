@@ -37,13 +37,3 @@
   display: block;
   // font-size: 0.6rem !important;
 }
-
-@include u.breakpoint("1400px") {
-  .banner {
-    height: 42%;
-  }
-
-  .card {
-    height: 10rem;
-  }
-}

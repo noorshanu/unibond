@@ -225,265 +225,261 @@ a {
 
 // MEDIA QUIERS ==============
 
-@include u.breakpoint("1400px") {
-  .dashboard-navbar {
-    .fs-24px {
-      font-size: var(--fs-18px);
-    }
-    .fs-18px {
-      font-size: var(--fs-12px);
-    }
-    .fs-14px {
-      font-size: var(--fs-12px);
-    }
-  }
+// @include u.breakpoint("1400px") {
+//   .dashboard-navbar {
+//     .fs-24px {
+//       font-size: var(--fs-18px);
+//     }
+//     .fs-18px {
+//       font-size: var(--fs-12px);
+//     }
+//     .fs-14px {
+//       font-size: var(--fs-12px);
+//     }
+//   }
 
-  .dashboard-dashboard {
-    .fs-12px {
-      font-size: var(--fs-10px);
-    }
-    .fs-14px {
-      font-size: var(--fs-12px);
-    }
-    .fs-18px {
-      font-size: var(--fs-16px);
-    }
-    .fs-36px {
-      font-size: var(--fs-26px);
-    }
-    .fs-22px {
-      font-size: var(--fs-18px);
-    }
-  }
+//   .dashboard-dashboard {
+//     .fs-12px {
+//       font-size: var(--fs-10px);
+//     }
+//     .fs-14px {
+//       font-size: var(--fs-12px);
+//     }
+//     .fs-18px {
+//       font-size: var(--fs-16px);
+//     }
+//     .fs-36px {
+//       font-size: var(--fs-26px);
+//     }
+//     .fs-22px {
+//       font-size: var(--fs-18px);
+//     }
+//   }
 
-  .dashboard-sidebar {
-    .fs-26px {
-      font-size: var(--fs-20px);
-    }
-    .fs-14px {
-      font-size: var(--fs-12px);
-    }
-    .fs-12px {
-      font-size: var(--fs-10px);
-    }
-    .fs-10px {
-      font-size: var(--fs-8px);
-    }
-    .fs-16px {
-      font-size: var(--fs-14px);
-    }
-  }
+//   .dashboard-sidebar {
+//     .fs-26px {
+//       font-size: var(--fs-20px);
+//     }
+//     .fs-14px {
+//       font-size: var(--fs-12px);
+//     }
+//     .fs-12px {
+//       font-size: var(--fs-10px);
+//     }
+//     .fs-10px {
+//       font-size: var(--fs-8px);
+//     }
+//     .fs-16px {
+//       font-size: var(--fs-14px);
+//     }
+//   }
 
-  .dashboard-services {
-    .fs-20px {
-      font-size: var(--fs-16px);
-    }
-  }
+//   .dashboard-services {
+//     .fs-20px {
+//       font-size: var(--fs-16px);
+//     }
+//   }
 
-  .dashboard-profile {
-    .fs-16px {
-      font-size: var(--fs-14px);
-    }
+//   .dashboard-profile {
+//     .fs-16px {
+//       font-size: var(--fs-14px);
+//     }
 
-    .fs-18px {
-      font-size: var(--fs-14px);
-    }
-    .fs-24px {
-      font-size: var(--fs-18px);
-    }
-    .fs-36px {
-      font-size: var(--fs-26px);
-    }
-  }
+//     .fs-18px {
+//       font-size: var(--fs-14px);
+//     }
+//     .fs-24px {
+//       font-size: var(--fs-18px);
+//     }
+//     .fs-36px {
+//       font-size: var(--fs-26px);
+//     }
+//   }
 
-  .dashboard-orders {
-    .fs-36px {
-      font-size: var(--fs-26px);
-    }
+//   .dashboard-orders {
+//     .fs-36px {
+//       font-size: var(--fs-26px);
+//     }
 
-    .fs-16px {
-      font-size: var(--fs-14px);
-    }
-  }
-}
+//     .fs-16px {
+//       font-size: var(--fs-14px);
+//     }
+//   }
+// }
 
-@include u.breakpoint(xLarge) {
-  .dashboard-navbar {
-    .fs-24px {
-      font-size: var(--fs-16px);
-    }
-    .fs-18px {
-      font-size: var(--fs-12px);
-    }
-    .fs-14px {
-      font-size: var(--fs-12px);
-    }
-    .fs-20px {
-      font-size: var(--fs-14px);
-    }
-    .fs-16px {
-      font-size: var(--fs-14px);
-    }
-  }
+// @include u.breakpoint(xLarge) {
+//   .dashboard-navbar {
+//     .fs-24px {
+//       font-size: var(--fs-16px);
+//     }
+//     .fs-18px {
+//       font-size: var(--fs-12px);
+//     }
+//     .fs-14px {
+//       font-size: var(--fs-12px);
+//     }
+//     .fs-20px {
+//       font-size: var(--fs-14px);
+//     }
+//     .fs-16px {
+//       font-size: var(--fs-14px);
+//     }
+//   }
 
-  .dashboard-dashboard {
-    .fs-12px {
-      font-size: var(--fs-10px);
-    }
-    .fs-14px {
-      font-size: var(--fs-10px);
-    }
-    .fs-18px {
-      font-size: var(--fs-14px);
-    }
-    .fs-36px {
-      font-size: var(--fs-22px);
-    }
-    .fs-22px {
-      font-size: var(--fs-16px);
-    }
-  }
+//   .dashboard-dashboard {
+//     .fs-12px {
+//       font-size: var(--fs-10px);
+//     }
+//     .fs-14px {
+//       font-size: var(--fs-10px);
+//     }
+//     .fs-18px {
+//       font-size: var(--fs-14px);
+//     }
+//     .fs-36px {
+//       font-size: var(--fs-22px);
+//     }
+//     .fs-22px {
+//       font-size: var(--fs-16px);
+//     }
+//   }
 
-  .dashboard-sidebar {
-    .fs-26px {
-      font-size: var(--fs-20px);
-    }
-    .fs-14px {
-      font-size: var(--fs-12px);
-    }
-    .fs-12px {
-      font-size: var(--fs-10px);
-    }
-    .fs-10px {
-      font-size: var(--fs-8px);
-    }
-    .fs-16px {
-      font-size: var(--fs-14px);
-    }
-  }
-}
+//   .dashboard-sidebar {
+//     .fs-26px {
+//       font-size: var(--fs-20px);
+//     }
+//     .fs-14px {
+//       font-size: var(--fs-12px);
+//     }
+//     .fs-12px {
+//       font-size: var(--fs-10px);
+//     }
+//     .fs-10px {
+//       font-size: var(--fs-8px);
+//     }
+//     .fs-16px {
+//       font-size: var(--fs-14px);
+//     }
+//   }
+// }
 
 @include u.breakpoint(large) {
   .dashboard-profile {
-    .fs-16px {
-      font-size: var(--fs-12px);
-    }
+    // .fs-16px {
+    //   font-size: var(--fs-12px);
+    // }
 
-    .fs-18px {
-      font-size: var(--fs-12px);
-    }
+    // .fs-18px {
+    //   font-size: var(--fs-12px);
+    // }
 
     .fs-24px {
-      font-size: var(--fs-16px);
+      font-size: var(--fs-20px);
     }
     .fs-36px {
-      font-size: var(--fs-20px);
+      font-size: var(--fs-30px);
     }
   }
 
   .dashboard-orders {
     .fs-36px {
-      font-size: var(--fs-20px);
-    }
-
-    .fs-16px {
-      font-size: var(--fs-12px);
+      font-size: var(--fs-30px);
     }
   }
 }
 
-@include u.breakpoint(medium) {
-  // SERVICES PAGE
+// @include u.breakpoint(medium) {
+//   // SERVICES PAGE
 
-  .dashboard-services {
-    .fs-20px {
-      font-size: var(--fs-14px);
-    }
-  }
-}
+//   .dashboard-services {
+//     .fs-20px {
+//       font-size: var(--fs-14px);
+//     }
+//   }
+// }
 
-@include u.breakpoint(small) {
-  .dashboard-navbar {
-    .fs-24px {
-      font-size: var(--fs-16px);
-    }
-    .fs-18px {
-      font-size: var(--fs-12px);
-    }
-    .fs-14px {
-      font-size: var(--fs-12px);
-    }
-    .fs-20px {
-      font-size: var(--fs-12px);
-    }
-    .fs-16px {
-      font-size: var(--fs-12px);
-    }
-  }
+// @include u.breakpoint(small) {
+//   .dashboard-navbar {
+//     .fs-24px {
+//       font-size: var(--fs-16px);
+//     }
+//     .fs-18px {
+//       font-size: var(--fs-12px);
+//     }
+//     .fs-14px {
+//       font-size: var(--fs-12px);
+//     }
+//     .fs-20px {
+//       font-size: var(--fs-12px);
+//     }
+//     .fs-16px {
+//       font-size: var(--fs-12px);
+//     }
+//   }
 
-  .dashboard-dashboard {
-    .fs-12px {
-      font-size: var(--fs-10px);
-    }
-    .fs-14px {
-      font-size: var(--fs-10px);
-    }
-    .fs-18px {
-      font-size: var(--fs-14px);
-    }
-    .fs-36px {
-      font-size: var(--fs-22px);
-    }
-    .fs-22px {
-      font-size: var(--fs-16px);
-    }
-    .fs-16px {
-      font-size: var(--fs-14px);
-    }
-  }
+//   .dashboard-dashboard {
+//     .fs-12px {
+//       font-size: var(--fs-10px);
+//     }
+//     .fs-14px {
+//       font-size: var(--fs-10px);
+//     }
+//     .fs-18px {
+//       font-size: var(--fs-14px);
+//     }
+//     .fs-36px {
+//       font-size: var(--fs-22px);
+//     }
+//     .fs-22px {
+//       font-size: var(--fs-16px);
+//     }
+//     .fs-16px {
+//       font-size: var(--fs-14px);
+//     }
+//   }
 
-  .dashboard-sidebar {
-    .fs-26px {
-      font-size: var(--fs-20px);
-    }
-    .fs-14px {
-      font-size: var(--fs-12px);
-    }
-    .fs-12px {
-      font-size: var(--fs-10px);
-    }
-    .fs-10px {
-      font-size: var(--fs-8px);
-    }
-    .fs-16px {
-      font-size: var(--fs-14px);
-    }
-  }
+//   .dashboard-sidebar {
+//     .fs-26px {
+//       font-size: var(--fs-20px);
+//     }
+//     .fs-14px {
+//       font-size: var(--fs-12px);
+//     }
+//     .fs-12px {
+//       font-size: var(--fs-10px);
+//     }
+//     .fs-10px {
+//       font-size: var(--fs-8px);
+//     }
+//     .fs-16px {
+//       font-size: var(--fs-14px);
+//     }
+//   }
 
-  .dashboard-profile {
-    .fs-16px {
-      font-size: var(--fs-12px);
-    }
+//   .dashboard-profile {
+//     .fs-16px {
+//       font-size: var(--fs-12px);
+//     }
 
-    .fs-18px {
-      font-size: var(--fs-12px);
-    }
+//     .fs-18px {
+//       font-size: var(--fs-12px);
+//     }
 
-    .fs-24px {
-      font-size: var(--fs-14px);
-    }
-    .fs-36px {
-      font-size: var(--fs-18px);
-    }
-  }
+//     .fs-24px {
+//       font-size: var(--fs-14px);
+//     }
+//     .fs-36px {
+//       font-size: var(--fs-18px);
+//     }
+//   }
 
-  .dashboard-orders {
-    .fs-36px {
-      font-size: var(--fs-18px);
-    }
+//   .dashboard-orders {
+//     .fs-36px {
+//       font-size: var(--fs-18px);
+//     }
 
-    .fs-16px {
-      font-size: var(--fs-12px);
-    }
-  }
-}
+//     .fs-16px {
+//       font-size: var(--fs-12px);
+//     }
+//   }
+// }

@@ -25,12 +25,6 @@ $sidebar-width: 20rem;
       padding: 1.6rem 2.6rem;
       padding-bottom: 2.3rem;
       padding-left: 7.2rem;
-
-      @include u.breakpoint("1400px") {
-        padding: 1.6rem 2rem;
-        padding-bottom: 2rem;
-        padding-left: 5.8rem;
-      }
     }
   }
 }
@@ -45,21 +39,22 @@ $sidebar-width: 20rem;
   height: 100%;
 }
 
-@include u.breakpoint("1400px") {
-  $sidebar-width: 15rem;
+// @include u.breakpoint(xLarge) {
+//   .dashboard {
+//     height: auto;
+//     padding-bottom: 4rem;
 
-  .dashboard {
-    &.showSidebar {
-      grid-template-columns: 1fr $sidebar-width;
-    }
-  }
+//     &.showSidebar {
+//       grid-template-columns: 1fr;
+//     }
+//   }
 
-  .sidebar {
-    width: $sidebar-width;
-  }
-}
+//   .sidebar {
+//     display: none;
+//   }
+// }
 
-@include u.breakpoint(xLarge) {
+@include u.breakpoint(large) {
   .dashboard {
     height: auto;
     padding-bottom: 4rem;
@@ -67,19 +62,14 @@ $sidebar-width: 20rem;
     &.showSidebar {
       grid-template-columns: 1fr;
     }
-  }
-
-  .sidebar {
-    display: none;
-  }
-}
-
-@include u.breakpoint(large) {
-  .dashboard {
     .left {
       & > main {
         padding: 1rem 3%;
       }
+    }
+
+    .sidebar {
+      display: none;
     }
   }
 }
