@@ -139,5 +139,34 @@
 
   @include u.breakpoint(xsmall) {
     padding: 0 1.6rem;
+    height: 3.4rem;
+
+    $icon-szie: 1rem;
+
+    button {
+      &::before {
+        font-size: u.rem(10);
+      }
+
+      img {
+        width: $icon-szie;
+      }
+    }
+
+    button:nth-child(2) {
+      img {
+        width: $icon-szie + 0.1rem;
+      }
+    }
+    button:nth-child(3) {
+      img {
+        width: $icon-szie + 0.2rem;
+      }
+    }
+    button:nth-child(4) {
+      img {
+        width: $icon-szie + 0.3rem;
+      }
+    }
   }
 }
