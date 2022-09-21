@@ -40,7 +40,7 @@ function SidebarRight(props) {
         </header>
 
         <main>
-          <Link href="/" passHref>
+          <Link href="/chat" passHref>
             <a href="">
               <span className="fs-16px black weight-6">Messages</span>
               <IconButton
